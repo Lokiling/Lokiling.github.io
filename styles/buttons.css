@@ -1,0 +1,131 @@
+.button {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    color: #f5f5f5;
+    position: relative;
+    font-family: 'Ubuntu';
+    transition: background-color .4s;
+    -moz-transition: background-color .4s;	/* Firefox 4 */
+    -webkit-transition: background-color .4s;	/* Safari 和 Chrome */
+    -o-transition: background-color .4s;	/* Opera */
+}
+.button a {
+    color: #f5f5f5;
+}
+.button:hover {
+    cursor: pointer;
+    top: -2px;
+}
+.button:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+.ele_works {
+    padding: 0 15px;
+    height: 32px;
+    margin: 0 10px 0 10px;
+    float: left;
+    line-height: 32px;
+    background-color: #1abc9c;
+    box-shadow:0 3px 0 #16a085;
+}
+.ele_works:hover {
+    background-color: #3cd3b5;
+    box-shadow:0 4px 0 #16a085;
+    top: -1px;
+}
+.ele_works:active {
+    box-shadow: none;
+    top: 3px;
+}
+.worksWrapper .active {
+    box-shadow: none;
+    top: 3px;
+    background-color: #16a085;
+}
+.worksWrapper .active:hover {
+    cursor: default;
+    background-color: #16a085;
+    box-shadow: none;
+    top:3px;
+}
+
+.ele_resume {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    font-size: 24px;
+    line-height: 60px;
+    background-color: #f2836b;
+    box-shadow:0 3px 0 #e3694f;
+}
+.ele_resume:hover {
+    background-color: #ff9c86;
+    box-shadow:0 5px 0 #e3694f;
+}
+.ele_resume:active {
+    box-shadow: none;
+}
+
+.ele_about {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    font-size: 24px;
+    line-height: 60px;
+    background-color: #54beef;
+    box-shadow:0 3px 0 #00a2e0;
+}
+.ele_about:hover {
+    background-color: #66c5f1;
+    box-shadow:0 5px 0 #00a2e0;
+}
+.ele_about:active {
+    box-shadow: none;
+}
+
+/* project view */
+.viewButton i { margin-left:5px; font-size: 15px; }
+.viewButton {
+    margin-top: 50px;
+    height: 40px;
+    width:170px;
+    float: left;
+    font-size: 20px;
+    line-height: 40px;
+    background-color: #1abc9c;
+    box-shadow:0 3px 0 #16a085;
+}
+.viewButton:hover {
+    background-color: #3cd3b5;  
+    box-shadow:0 4px 0 #16a085;
+    top: -1px;
+}
+.viewButton:active {
+    top: 3px;
+}
+.hcidProjects .viewButton {
+    margin-top: 10px;
+    font-size: 17px;
+}
+#pro_port2012 .viewButton { background-color:#ffa751; box-shadow: 0 3px 0 #ff8916;}
+#pro_port2012 .viewButton:hover { background-color:#ffbb78; box-shadow: 0 4px 0 #ff8916;}
+#pro_port2012 .viewButton:active { box-shadow: none;}
+#pro_bubbleCat .viewButton {background-color:#f1c40f; box-shadow: 0 3px 0 #f1b10f; }
+#pro_bubbleCat .viewButton:hover { background-color:#f3cd34; box-shadow: 0 4px 0 #f1b10f;}
+#pro_bubbleCat .viewButton:active { box-shadow: none;}
+#pro_bar .viewButton {background-color:#138fe4; box-shadow: 0 3px 0 #0f72b6; }
+#pro_bar .viewButton:hover { background-color:#3ba6ef; box-shadow: 0 4px 0 #0f72b6;}
+#pro_bar .viewButton:active { box-shadow: none;}
+#pro_beacon .viewButton {background-color:#18b0ff; box-shadow: 0 3px 0 #0084c9; }
+#pro_beacon .viewButton:hover { background-color:#3fbdff; box-shadow: 0 4px 0 #0084c9;}
+#pro_beacon .viewButton:active { box-shadow: none;}
+#pro_vw .viewButton {background-color:#1E88E5; box-shadow: 0 3px 0 #1976D2; }
+#pro_vw .viewButton:hover { background-color:#2196F3; box-shadow: 0 4px 0 #1976D2;}
+#pro_vw .viewButton:active { box-shadow: none;}
+#pro_home .viewButton {background-color:#8D6E63; box-shadow: 0 3px 0 #795548; }
+#pro_home .viewButton:hover { background-color:#A1887F; box-shadow: 0 4px 0 #795548;}
+#pro_home .viewButton:active { box-shadow: none;}

@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+    <title>Mochen Liu</title>
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="author" content="Mochen Liu">
+    <meta name="description" content="Mochen Liu is a graduate of Indiana University's Human-Computer Interaction program and seeking a full-time UX/Product designer position.">
+	<meta name="keywords" content="design, HCI, web, master, UX, interaction, product, mobile" >
+    <meta name="theme-color" content="#009688">
+    
+    <!-- CSS style sheets -->
+	<link href="styles/main.css" rel="stylesheet">
+	<link href="styles/buttons.css" rel="stylesheet">
+	<link href="styles/colors.css" rel="stylesheet">
+	<link href="styles/projectGrids.css" rel="stylesheet">
+    <link href="styles/projectView.css" rel="stylesheet">
+    <link href="styles/slide.css" rel="stylesheet">
+    <link href="styles/simpletextrotator.css" rel="stylesheet">
+    <link href="styles/magnific-popup.css" rel="stylesheet">
+    <link href="styles/camera.css" rel="stylesheet">
+    <link href="styles/newProjects.css" rel="stylesheet">
+    <link href="styles/imgComp.css" rel="stylesheet">
+    <link href="styles/materialButtons.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+<!--    <link href="styles/mobile.css" rel="stylesheet">-->
+    
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300|Voltaire|Snippet' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+    <link rel="import" href="https://www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
+
+<body>
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    
+    <!-- introduction begin -->
+	<section id="intro" class="parallaxBg">
+    	<div id="hello">
+        	<h3>Hi,I'm</h3>
+            <img id="logo_intro" src="images/logo_large.png" style="display:none;">
+            <h1><span id="cpM">M</span><span id="expM" class="rotate">ochen Liu, UX Designer, Interaction Designer, Traveler, Gamer, Explorer</span></h1>
+        </div>
+    </section>
+    <!-- introduction end -->
+    
+    <!-- navigation begin -->
+    <nav id="nav" class="white white_bg_bg white_border">
+        <a class="scroll" href="#intro" data-speed="1500" data-easing="easeInOutNormal">
+            <div id="logo_nav_wrapper">
+                <span><i class="fa fa-arrow-up fa-lg fa-fw"></i></span>
+                <div id="logo_nav"></div>
+            </div>
+        </a>
+        <div id="logo_text_nav" style="display:none;">Mochen Liu</div>
+        <ul>
+            <li><a class="scroll" href="#about" data-speed="1000" data-easing="easeInOutNormal" id="nav_about" >About</a></li>
+            <li><a class="scroll"ß href="#resume" data-speed="1000" data-easing="easeInOutNormal" id="nav_resume">Resume</a></li>
+            <li><a class="scroll" href="#works" data-speed="1000" data-easing="easeInOutNormal" id="nav_works">Works</a></li>
+        </ul>
+    </nav>
+    <!-- navigation end -->
+    
+    <!-- section works begin -->
+    <section id="works" class="whiteBoard">
+        <div class="wrapper">
+            <div class="sectionTitle" style="padding:0;">Works</div>
+            <div class="worksWrapper">
+                <div class="filter button ele_works active" id="pro_All" data-filter="all">All
+                    <paper-ripple fit></paper-ripple></div>
+                <div class="filter button ele_works" id="pro_Ixd" data-filter="ixd">Interaction
+                    <paper-ripple fit></paper-ripple></div>
+                <div class="filter button ele_works" id="pro_Visual" data-filter="visual">Visual
+                    <paper-ripple fit></paper-ripple></div>
+                <div class="filter button ele_works" id="pro_Code" data-filter="code">Coding
+                    <paper-ripple fit></paper-ripple></div>
+                <div class="filter button ele_works" id="pro_Work" data-filter="work">Professional
+                    <paper-ripple fit></paper-ripple></div>
+                <div class="filter button ele_works" id="pro_Edu" data-filter="edu">Academic
+                    <paper-ripple fit></paper-ripple></div>
+                <div class="filter button ele_works" id="pro_Prot" data-filter="prototype">Prototype
+                    <paper-ripple fit></paper-ripple></div>
+                <div style="clear:both;"></div>
+            </div>
+            <ul id="projectGrids" class="grid cs-style-6">
+                
+<!--
+                 <li class="mix work ixd visual prototype">
+                    <figure>
+                        <img src="images/designsys.png" alt="Design system">
+                        <figcaption>
+                            <h4>Design system</h4>
+                            <a href="projects/designSys.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                            <paper-ripple fit></paper-ripple></a>
+                            <p>Under Construction...</p>
+                        </figcaption>
+                    </figure>
+                </li>        
+-->
+                
+                 <li class="mix edu ixd visual prototype">
+                    <figure>
+                        <img src="images/proj_travel.png" alt="Project Travel">
+                        <figcaption>
+                            <h4>Capstone: City Explorer</h4>
+                            <a href="projects/cityexplorer.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                            <paper-ripple fit></paper-ripple></a>
+<!--                            <p>Under Construction...</p>-->
+                        </figcaption>
+                    </figure>
+                </li>        
+                
+                <li class="mix edu ixd visual prototype">
+                    <figure>
+                        <img src="images/proj_checklist.png" alt="Smart Checklist">
+                        <figcaption>
+                            <h4>Smart Checklist</h4>
+                            <a href="projects/checklist.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                            <paper-ripple fit></paper-ripple></a>
+<!--                            <p>Under Construction...</p>-->
+                        </figcaption>
+                    </figure>
+                </li>
+                
+                <li class="mix visual">
+                    <figure>
+                        <img src="images/proj_doodle.jpg" alt="Doodle Practice">
+                        <figcaption>
+                            <h4>Doodle Practice</h4>
+                            <a href="projects/doodle.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+                
+                <li class="mix work ixd visual prototype">
+                    <figure>
+                        <img src="images/proj_idean.jpg" alt="Candidates Cabana">
+                        <figcaption>
+                            <h4>Candidates Cabana</h4>
+                            <a href="projects/idean.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+                
+                <li class="mix edu ixd">
+                    <figure>
+                        <img src="images/proj_calendar.png" alt="Google Calendar Redesign">
+                        <figcaption class="gridUnderCons">
+                            <h4>Google Calendar<br/> Redesign</h4>
+                            <a href="projects/gcal.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+<!--                            <p>Under Construction...</p>-->
+                        </figcaption>
+                    </figure>
+                </li>
+<!--
+                <li class="mix work visual code ixd">
+                    <figure>
+                        <img src="images/proj_SOS_con.jpg" alt="RapidSOS website">
+                        <figcaption class="gridUnderCons">
+                            <h4>RapidSOS Website</h4>
+                            <p>Under Construction...</p>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix ixd edu">
+                    <figure>
+                        <img src="images/proj_vw.svg" alt="VW Self-Driving Car">
+                        <figcaption>
+                            <h4>VW Self-Driving Car</h4>
+                            <a href="projects/vw.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix edu prototype ixd">
+                    <figure>
+                        <img src="images/proj_home.png" alt="Home Lync Portal">
+                        <figcaption>
+                            <h4>Home Lync Portal</h4>
+                            <a href="projects/home.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix ixd mobile prototype web visual code work">
+                    <figure>
+                        <img src="images/proj_beacon.jpg" alt="DropBeacon">
+                        <figcaption>
+                            <h4>DropBeacon</h4>
+                            <a href="projects/beacon.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="mix ixd mobile web visual prototype work">
+                    <figure>
+                        <img src="images/proj_raago.jpg" alt="Raago">
+                        <figcaption>
+                            <h4>Raago</h4>
+                            <a href="projects/raago.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix ixd visual code web">
+                    <figure>
+                        <img src="images/proj_port2013.jpg" alt="Portfolio 2013">
+                        <figcaption>
+                            <h4>New Portfolio 2013</h4>
+                            <a href="projects/port2013.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix visual">
+                    <figure>
+                        <img src="images/proj_graphic.jpg" alt="Graphic Designs">
+                        <figcaption>
+                            <h4>Graphic designs</h4>
+                            <a href="projects/graphic.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix ixd visual code web">
+                    <figure>
+                        <img src="images/proj_port2012.jpg" alt="Portfolio 2012">
+                        <figcaption>
+                            <h4>Portfolio 2012</h4>
+                            <a href="projects/port2012.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+                <li class="mix ixd game prototype analysis work">
+                    <figure>
+                        <img src="images/proj_bubbleCat.jpg" alt="Bubble Cat">
+                        <figcaption>
+                            <h4>Bubble Cat</h4>
+                            <a href="projects/bubbleCat.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+<!--
+                <li class="mix ixd game prototype analysis work">
+                    <figure>
+                        <img src="images/proj_bar.jpg" alt="Lounge Bar">
+                        <figcaption>
+                            <h4>Lounge Bar</h4>
+                            <a href="projects/loungeBar.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i>
+                    <paper-ripple fit></paper-ripple></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix ixd visual code web prototype edu">
+                    <figure>
+                        <img src="images/proj_gradu.jpg" alt="Graduation System">
+                        <figcaption>
+                            <h4>Graduation Projects</h4>
+                            <a href="projects/graduProjects.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+<!--
+                <li class="mix ixd visual code web prototype">
+                    <figure>
+                        <img src="images/proj_blaze.jpg" alt="OA System">
+                        <figcaption>
+                            <h4>Blaze OA System</h4>
+                            <a href="projects/oasys.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="mix ixd visual code web">
+                    <figure>
+                        <img src="images/proj_college.jpg" alt="College Information System">
+                        <figcaption>
+                            <h4>College Info</h4>
+                            <a href="projects/collegeInfo.html" class="ajax-popup-link"><i class="fa fa-caret-right"></i></a>
+                        </figcaption>
+                    </figure>
+                </li>
+-->
+            </ul>
+        </div>
+    </section>
+    <!-- section works end -->
+    
+    <section id="parallaxBG1" class="parallaxBg" style="background-size:100%;">
+        <p class="parallaxText">
+        "Only a life lived for others is a life worthwhile"<br/> - Albert Einstein</p>
+    </section>
+    
+    <!-- section resume begin -->
+    <section id="resume" class="whiteBoard red_fonts">
+        <div class="wrapper">
+            <div class="sectionTitle">Resume</div>
+            <!--left column start -->
+            <div class="leftColumn">
+                <!--Education-->
+                <div class="resumeTitle resumeContents">Education</div>
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">Indiana University Bloomington</p>
+                    <p class="expInterval">Aug. 2014 —  May. 2016</p>
+                    <p class="reading">Master of <span class="fontBold">Human-Computer Interaction Design</span></p>
+                </article>
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">Beijing University of Technology</p>
+                    <p class="expInterval">Sep. 2007 —  Jul. 2011</p>
+                    <p class="reading">Bachelor of <span class="fontBold">Software Engineering</span></p>
+<!--
+                    <p class="reading"><span class="fontBold" style="color:#7f8c8d;">Graduation design:</span> Graduation Project Management System (GPMS)</p>
+                    <p class="reading" style="margin-top: 3px"><span class="fontBold"  style="color:#7f8c8d;">Supervisor:</span> Zhenlian Shi</p> 
+-->
+                </article>
+                
+                <!--work exp-->
+                <div class="resumeTitle resumeContents">Experience</div>
+                
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">Guidespark , <span>Product Designer</span></p>
+                    <p class="expInterval">Nov. 2016 — Present</p>
+<!--                    <p class="reading">Responsibilities :</p>-->    
+                    <ul class="reading fa-ul">
+                        <li><i class="fa fa-li fa-angle-right"></i>Collaborate closely with engineers and product managers to plan and execute feature releases for our product.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Deliver high-quality visual, interaction and motion designs and prototypes in an agile framework.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Constantly collect feedbacks from end users and stakeholders, and explore ideas to improve the experience of our product.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Actively advocate design value and method within Guidespark.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Work collaboratively with other designers and engineers on the design system for our product. </li>
+                    </ul>
+                </article>
+                
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">Idean , <span>Interaction Design Intern</span></p>
+                    <p class="expInterval">Jun. 2015 — Aug. 2015</p>
+<!--                    <p class="reading">Responsibilities :</p>-->    
+                    <ul class="reading fa-ul">
+                        <li><i class="fa fa-li fa-angle-right"></i>Individually designed an internal recruiting tool, including researching, interviewing, sketching, wireframing, user testing and prototyping. </li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Collected feedbacks and improved design from running user validations.
+                        <li><i class="fa fa-li fa-angle-right"></i>Worked collaboratively with a team of designers on ideation, sketches, wireframes, interviews and testing.</li>
+                    </ul>
+                </article>
+                
+<!--                <article class="resumeContents">-->
+<!--                    <p class="expTitle fontBold">Indiana University , <span>Associate Instructor</span></p>-->
+<!--                    <p class="expInterval">Aug. 2015 — May. 2016</p>-->
+<!--                    <p class="reading">Responsibilities :</p>-->    
+<!--                    <ul class="reading fa-ul">-->
+<!--                        <li><i class="fa fa-li fa-angle-right"></i>Mentored senior students with their capstone projects. </li>-->
+<!--                        <li><i class="fa fa-li fa-angle-right"></i>Graded and critiqued students’ designs and documents.</li>-->
+<!--                        <li><i class="fa fa-li fa-angle-right"></i>Advised teams through the process of design and development.</li>-->
+<!--                    </ul>-->
+<!--                </article>-->
+                
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">eDaoyou , <span>Product Designer & Interaction Designer</span></p>
+                    <p class="expInterval">Oct. 2013 — Mar. 2014</p>
+<!--                    <p class="reading">Responsibilities :</p>-->    
+                    <ul class="reading fa-ul">
+                        <li><i class="fa fa-li fa-angle-right"></i>Brainstormed and designed our start-up project: DropBeacon, a new way for shopping. </li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Designed and implemented the websites of DropBeacon.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Responsible for features design on the next version of the mobile app of DropBeacon. </li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Accomplished graphic design of Admin-panel websites for our products: DropBeacon and Raago.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Built wireframes, prototypes of our products and streamlined user experience,  independently.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Worked on planning and designing of applications based on LBS on Android and iOS.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Communicated with users and found out potential demands of them.</li>
+                    </ul>
+                </article>
+                
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">Happy Elements , <span>Product Designer & Game Designer</span></p>
+                    <p class="expInterval">Dec. 2010 —  Jul. 2012</p>
+<!--                    <p class="reading">Responsibilities :</p>-->
+                    <ul class="reading fa-ul">
+                        <li><i class="fa fa-li fa-angle-right"></i>Worked on two games and designed new features for them.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Sketched and worked on wireframes for the interfaces and interaction of our games independently.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Planned and designed operational activities of our games, including copywriting, sketching, wireframing and data analysis.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Presented ideas and thoughts to our team and company.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Collaborated with co-workers to ensure our features had high quality and could be deployed on time.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Collected users’ feedbacks and improved user experience of our products.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Designed two extremely successful features which continuously improved our game’s revenue and reversed the decline of DAU.</li>
+                    </ul>
+                </article>
+                
+<!--
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">ChinaSoft International , <span>Web Designer & Developer</span></p>
+                    <p class="expInterval">Sep. 2010 —  Oct. 2010</p>
+                    <ul class="reading fa-ul">
+                        <li><i class="fa fa-li fa-angle-right"></i>Created the entire UI for our project: the OA system, in my team.</li>
+                        <li><i class="fa fa-li fa-angle-right"></i>Implemented the front-end parts of our project.</li>
+                    </ul>
+                </article>
+                
+                <article class="resumeContents">
+                    <p class="expTitle fontBold">CITIC Networks , <span>Graphic Designer</span></p>
+                    <p class="expInterval">Jan. 2010 —  Feb. 2012</p>
+                    <ul class="reading fa-ul">
+                        <li><i class="fa fa-li fa-angle-right"></i>Involved in graphic and structural design.</li>
+                    </ul>
+                </article>
+-->
+<!--Honor-->
+<!--
+                <div class="resumeTitle resumeContents">Honors & Awards</div>
+                <article class="resumeContents">
+                    <p style="float:left;"><span class="fontBold">Excellent Development Team</span> in ChinaSoft International</p>
+                    <p class="expInterval">Sep. 2010</p>
+                    <p style="clear:both;"></p>
+                    
+                    <p style="float:left; margin-top:20px;"><span class="fontBold">Spark Fund (Scholarship)</span> of Beijing University of Technology</p>
+                    <p class="expInterval" style="margin-top:20px;">May. 2010</p>
+                    <p style="clear:both;"></p>
+                </article>
+-->
+            </div>
+            <!--left column end -->
+            <!--right column start-->
+            <div class="rightColumn">
+                <div class="resumeTitle resumeContents" style="margin-top: 50px;">Design Methods</div>
+                <article class="resumeContents" style="margin-top: 20px;">
+                    <ul class="listing">
+                        <li>Sketching</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Storyboarding</li>
+                        <li>Ideation</li>
+                        <li>Design Critique</li>
+                        <li>Usability Testing</li>
+                    </ul>
+                </article>
+                <div class="resumeTitle resumeContents">Tools</div>
+                <article class="resumeContents">
+                    <ul class="listing">
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>Principle</li>
+                        <li>Photoshop</li>
+                        <li>Invision</li>
+                        <li>Axure</li>
+                        <li>Balsamiq</li>
+                        <li>Illustrator</li>
+                        <li>AfterEffects</li>
+                    </ul>
+                </article>
+                <div class="resumeTitle resumeContents">Coding</div>
+                <article class="resumeContents">
+                    <ul class="listing">
+                        <li>Html5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                    </ul>
+                </article>
+                <div class="resumeTitle resumeContents">Languages</div>
+                <article class="resumeContents">
+                    <ul class="listing">
+                        <li>English</li>
+                        <li>Mandarin</li>
+                    </ul>
+                </article>
+                <div class="resumeTitle resumeContents">Interests</div>
+                <article class="resumeContents">
+                    <ul class="listing">
+                        <li>Traveling</li>
+                        <li>Hiking</li>
+                        <li>Drawing</li>
+                        <li>Video Games</li>
+                        <li>Board Games</li>
+                        <li>Technology</li>
+                        <li>Politics</li>
+                        <li>Diversity</li>
+                    </ul>
+                </article>
+            </div>
+            
+            <div style="clear:both; padding-top:20px;">
+                <div class="button ele_resume" >
+                    <a href="MochenLiu-Resume.pdf" target="_blank">
+                        <paper-ripple fit></paper-ripple>
+                        <i class="fa fa-cloud-download fa-fw"></i> Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section resume end -->
+    
+    <section id="parallaxBG2"  class="parallaxBg" style="background-size:100%">
+        <p class="parallaxText" style="margin: 0; text-align:center;">
+            <i class="fa fa-code"></i>Code + <i class="fa fa-pencil"></i>Design + <i class="fa fa-lightbulb-o"></i>Ideas + <i class="fa fa-heart"></i>Love = Me!
+        </p>
+    </section>
+    
+    <!-- section about begin -->
+    <section id="about" class="whiteBoard blue blue_fonts">
+        <div class="wrapper">
+            <div class="sectionTitle">About me</div>
+            <div id="aboutWrapper">
+                <article>
+                    <div id="profile"></div>
+                    <p id="aboutContent">I am a creative, detail-oriented UX designer with a background in software engineering. I graduated from Indiana University with a master's degree in Human-Computer Interaction / Design.</p>
+                    <p>Passionate about design and technology, I moved to the Bay area and currently working at Guidespark as a Product Designer. I believe design has the power to change people's lives and I want to leverage this power to make the world a better place.</p>
+                    <p>Outside of design, I see myself as an explorer and always stay curious about the world. I enjoy traveling to experience different cultures and meet new friends from all over the world. You can also find me playing video and board games in my spare time because there are more fantasy worlds worth exploring.</p>
+<!--
+I graduated from Software Engineering Department  at Beijing University of Technology. However, I do not have so much passion on coding; rather, I found out design is much more fun and … while my junior year. After I read the famous book, The Design of Everyday Things , written by Dr. Donman, I realized that design can make products less confusion, and reduce the feeling of frustration when people using those complicated products. Since then, I started to pay attention to User-centered design. I expected that with … design thinking, I can develop products that make user happy.<br/><br/>
+
+I worked in Happy Elements, a well-knowed social-game company in China, as a product manager after my graduation. During that time, I took part in two development of games and tried my best to design systems more user-friendly with my skills.<br/><br/>
+
+Now, I am working in a start-up company, who focus on mobile apps. 
+                    </p>-->  
+                </article>
+            </div>
+            
+            <div style="clear:both; padding-top:20px;">
+                <div class="button ele_about"><a href="mailto:mochenliu89@gmail.com" target="_blank">
+                    <paper-ripple fit></paper-ripple><i class="fa fa-envelope-o fa-fw "></i> Email Me</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- section about end -->
+    
+    <section>
+        <p id="mapTitle" class="parallaxText">I love traveling!!</p>
+        <div id="map_canvas" style="width:100%; height:800px;"></div>
+    </section>
+    
+    <!-- footer begin -->
+    <footer>
+        <div id="footer_tail"></div>
+        <div style="height: 150px; background-color: #1b1b1b;">
+            <a class="scroll" href="#intro" data-speed="1500" data-easing="easeInOutNormal"><div id="scrollTop" class="footerIcon"><i class="fa fa-arrow-up"></i></div></a>
+<!--
+            <a href="http://dribbble.com/mochen" target="_blank"><div id="dribbble" class="footerIcon"><i class="fa fa-dribbble"></i></div></a>
+            <a href="http://www.pinterest.com/mooreliu/" target="_blank"><div id="pinterest" class="footerIcon"><i class="fa fa-pinterest"></i></div></a>
+-->
+            <a href="https://www.instagram.com/mochenliu/" target="_blank"><div id="instagram" class="footerIcon"><i class="fa fa-instagram"></i></div></a>
+<!--            <a href="https://twitter.com/LiuMochen" target="_blank"><div id="twitter" class="footerIcon"><i class="fa fa-twitter"></i></div></a>-->
+            <a href="https://www.linkedin.com/in/mochenliu" target="_blank"><div id="linkedin" class="footerIcon"><i class="fa fa-linkedin"></i></div></a>
+            <a href="https://www.facebook.com/mochenliu89" target="_blank"><div id="facebook" class="footerIcon"><i class="fa fa-facebook"></i></div></a>
+<!--            <a href="https://plus.google.com/+MochenLiuUX/posts" target="_blank"><div id="google_plus" class="footerIcon"><i class="fa fa-google-plus"></i></div></a> -->
+            <a href="https://dribbble.com/mochen" target="_blank"><div id="dribbble" class="footerIcon"><i class="fa fa-dribbble"></i></div></a> 
+            <p>© 2019 - Hand Coded by <a href="http://www.mochenliu.com">MochenLiu </a></p>
+<!--            <p>Last update: Apr. 30th 2019 </p>-->
+        </div>
+    </footer>
+    <!-- footer end -->
+    
+    
+    <!-- Javascript -->
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+    <script src="scripts/scrolling.js"></script>
+    <script src="scripts/jquery.parallax-1.1.3.js"></script>
+    <script src="scripts/jquery.simple-text-rotator.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/smooth-scroll.js"></script>
+    <script src="scripts/projectDetail.js"></script>
+    <script src="scripts/maps.js"></script>
+    <script src="scripts/jquery.slides.min.js"></script>
+    <script src="scripts/jquery.mixitup.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59500381-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59500381-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

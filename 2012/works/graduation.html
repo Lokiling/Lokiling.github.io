@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Graduation System | Mochen</title>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/detail.css" rel="stylesheet" type="text/css" />
+<link href="../styles/quickMenu.css" rel="stylesheet" type="text/css" />
+<link href="../styles/jsslider.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="../scripts/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header">
+    	<div class="header-inner">
+    		<a href="../index.html"><div class="logo"></div></a>
+            <div class="navi">
+            	<ul>
+                	<a href="../index.html">
+                    	<li class="navi-item current">
+                    		Works
+                    </li></a>
+                    <a href="../resume.html">
+                    	<li class="navi-item">
+                    		Resume
+                    </li></a>
+                    <a href="../about.html">
+                    	<li class="navi-item">
+                    		About
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+	</div>
+    
+	<!--Contents-->
+    <div class="container">
+    <div class="space-bar"></div>
+    
+    	<!--Left - QuickMenu-->
+    	<div class="quickMenu">
+            <div class="menuCatalog">
+            	<div class="menuSubtitle">Game Designs</div>
+                <ul>
+                	<a href="bubblecat.html"><li class="menuItem">Bubble Cats</li></a>
+               		<a href="loungebar.html"><li class="menuItem">Louge Bar</li></a>
+                </ul>
+                
+            	<div class="menuSubtitle">Design Projects</div>
+                <ul>
+                	<li class="currentMenu">Graduation System</li>
+               	  <a href="oasys.html"><li class="menuItem">OA System</li></a>
+                </ul>
+                
+           	  <div class="menuSubtitle">Interaction Designs</div>
+                <ul>
+                	<a href="collegeinfo.html"><li class="menuItem">College Info UI</li></a>
+               	  <a href="myportfolio.html"><li class="menuItem">My Portfolio</li></a>
+                </ul>
+                
+                <a href="../index.html"><p class="menuBack"> ‹‹ Back to Works</p></a>
+                
+            </div>
+        </div>
+        <!--END Left Quickmenu-->
+
+        <!--Main Contents-->
+    	<div class="content">
+        	
+            <!-- Title Card -->
+        	<div class="cards card-title" id="gradu-title">
+            	<div id="work-title"><span>Graduation</span> System</div>
+                <p>This system is designed to help professors and seniors to communicate easier and more efficient.</p>
+            </div>
+            <!-- END - Title Card -->
+            
+            
+            <!-- main content-->
+		  <div class="cards" id="mainContents">
+			<div id="slider">
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="../imgs/gradu/wireframe1.jpg" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+						  <p>Wireframe</p>
+						</div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/gradu/draftdesign.jpg" alt="Slide 2">
+				  		<div class="caption">
+		 				  <p>Sketch design</p>
+						</div>
+				 	</div>
+					<div class="slide">
+						<img src="../imgs/gradu/result.jpg" alt="Slide 3">
+				  		<div class="caption">
+		 				  <p>Finally index page</p>
+					  </div>
+					</div>
+					<div class="slide">
+						<img src="../imgs/gradu/inputbox.jpg" alt="Slide 4">
+						<div class="caption">
+                       	  <p>Detail: Interation of input box</p>
+					  </div>
+               	  </div>    
+					<div class="slide">
+						<img src="../imgs/gradu/database.jpg" alt="Slide 5">
+						<div class="caption">
+                        	<p>Database</p>
+						</div>
+               	  </div>
+					<div class="slide">
+						<img src="../imgs/gradu/ppt1.jpg" alt="Slide 6">
+						<div class="caption">
+                       	  <p>PPT of results show</p>
+					  </div>
+               	  </div>    
+					<div class="slide">
+						<img src="../imgs/gradu/book.jpg" alt="Slide 7">
+						<div class="caption">
+                       	  <p>Reference Books</p>
+					  </div>
+               	  </div>                   
+
+				</div>
+<!--				<a href="#" class="prev"><img src="../imgs/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../imgs/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+                <a href="#"><div class="enable prev" id="sliderprev">‹‹</div></a>
+				<a href="#"><div class="enable next" id="slidernext">››</div></a>
+			</div>
+<!--			<img src="../imgs/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+		</div>
+
+            <!--Keywords-->
+<div class="subtitle">Keywords</div>
+                <p class="describe">Interaction design, wireframe, programming,  independent project, user experience, logical design, Java, Database, HTML, CSS Sprite, CSS3</p>
+                
+                
+			<!--Overview-->
+            <div class="subtitle">Overview</div>
+            <p class="describe">Because lots of students doing their graduation project at home independently, back to university to meet their professors and deliver their paper will waste a lot of time. Therefore, I chose a graduation project, which named Graduation Project Management System (GPMS) to attempt to solve this problem. Including establish projects for professors, choose projects and deliver papers for students, etc., the GPMS can gives both of them great convenience during graduation project. </p>
+
+            <!--My role-->
+			<div class="subtitle">Process</div>
+            <p class="describe">At the beginning, I wrote a requirements document and discussed with my advisor, Zhenlian Shi, to determine which features should the system includes and how to implement it. I drew some sketches to help me express my idea: a conspicuous timeline was showed in any page. My advisor thought it was a cool idea, so I started to design the interface subsequently.</p>
+            <p class="describe">Designing the website and implementing it by HTML and CSS is easy for me. Background programming, however, was the greatest challenge. Thanks to the OA system project we had finished in September, I do have a little experience about programming with Java and SQL. So I could learn from it and figured out this challenge. </p>
+            <p class="describe">I was very interesting in design, so I paid more attention on the details of interface and interaction, e.g. every button had different look when users' pointer hover it, lots of input boxes had grey hint in the boxes and plenty of mini icons to help users to learn how to use quickly. As a result, my project was very pretty ( I think, :) ) and user friendly.</p>
+          </div>
+            <!-- END main content-->
+            
+            <!-- right sidebar -->
+            <div class="cards" id="rightColumn">
+            	<div class="subtitle">Type</div>
+           	  <p>Interaction design<br />
+                User Interface design<br />
+           	  Programming</p>
+<div class="subtitle">Time</div>
+                <p>2010.12 - 2011.06</p>
+            	<div class="subtitle">Methods</div>
+					<p>Mind Mapping<br/>
+                    Sketching<br/>
+               		Prototyping<br/>
+                	Persona</p>
+           	  <div class="subtitle">Tools</div>
+    				<p>
+                    Balsamiq<br/>
+                    XMind<br />
+                    Visio<br />
+              		Word<br />
+                	Photoshop<br />
+                    Dreamweaver<br />
+                    Eclipse<br />
+              		MySQL<br /></p>
+            </div>
+            <!-- END - right sidebar -->
+            
+            <div class="clear"></div>
+            <div class="pageNav">
+            	<a href="loungebar.html"><div class="pageButton enable">‹ Previous</div></a>
+       			<a href="oasys.html"><div class="pageButton enable" id="nextButton">Next ›</div></a>
+            </div>
+        </div>
+        <!--END Main Contents-->
+    </div>
+    
+	<!--Footer-->
+	<div class="footer">
+    	<p>Copyright © <a href="about.html">MochenLiu</a> - All Rights Reserved | Last updated on Dec.16th, 2012</p>
+    </div>
+
+</body>
+</html>

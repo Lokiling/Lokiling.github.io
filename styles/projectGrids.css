@@ -1,0 +1,109 @@
+.grid {
+    padding: 20px;
+    max-width: 846px;
+    margin: 0 auto;
+    list-style: none;
+/*    text-align: center;*/
+}
+
+.grid li {
+    display: inline-block;
+    width: 280px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.grid .bigGrid {
+    width: 845px;
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+}
+
+.grid figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background: #3e4545;
+    color: #ffd24a;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.grid figcaption h4 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family:"Ubuntu" , sans-serif;
+    font-weight: 500;
+}
+ 
+.grid figcaption a {
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    background: #1abc9c;
+    color: #f5f5f5;
+    box-shadow:0 3px 0 #16a085;
+}
+.grid figcaption a::before {
+    content: 'Detail ';
+}
+.grid figcaption a:hover {
+    background-color: #3cd3b5;
+    box-shadow:0 3px 0 #16a085;
+}
+
+/* Caption Style 6 */
+.cs-style-6 figure img {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.cs-style-6 figure:hover img,
+.cs-style-6 figure.cs-hover img {
+	-webkit-transform: translateY(-20px) scale(0.6);
+	-moz-transform: translateY(-20px) scale(0.6);
+	-ms-transform: translateY(-20px) scale(0.6);
+	transform: translateY(-20px) scale(0.6);
+}
+
+.cs-style-6 figcaption {
+	height: 100%;
+	width: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cs-style-6 figcaption h4 {
+	margin-top: 187px;
+}
+
+.cs-style-6 .gridUnderCons h4 {
+	margin-top: 173px;
+    font-weight: 100;
+}
+.cs-style-6 .gridUnderCons p {
+    font-size: 20px;
+}
+.cs-style-6 figcaption a {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}

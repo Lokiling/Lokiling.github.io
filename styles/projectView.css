@@ -1,0 +1,152 @@
+.projectView {
+    position:relative;
+    width: 940px;
+    min-height: 600px; 
+    margin: 30px auto;
+    padding-bottom: 70px;
+    color: #7f8c8d;
+    font-family: "Ubuntu" , sans-serif;
+    background-color: #fdfdfd;
+    box-shadow:0 2px 8px rgba(0,0,0,0.55);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.projectView h1 {
+    width: auto;
+    height: 120px;
+    margin: 0;
+    color: #fdfdfd;
+    line-height: 130px;
+    text-align: center;
+    text-shadow: 0 2px 0 #34495e;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 940px 120px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.projectView p span {
+    font-weight: 800;
+}
+/*
+.projectView a {
+    text-decoration: underline;
+    color: #7f8c8d;
+    transition:  .4s;
+    -moz-transition:  .4s;	
+    -webkit-transition:  .4s;	
+    -o-transition:  .4s;	
+}
+*/
+.projectContent {
+    float:left;
+    width: 650px;
+    padding-left: 70px;
+    font-size: 14px;
+    line-height: 20px;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    font-family: "roboto" , sans-serif;
+}
+.projectView h5 {
+    margin: 25px 0 5px 0;
+    color: #50595a;
+    font-size: 20px;
+}
+.projectView h5+h8 {
+    margin-top: 15px;
+}
+.projectView h8 {
+    margin: 30px 0 5px 0;
+    color: #7f8c8d;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+}
+#pro_graphic .projectContent p+h5 {
+    margin-top: 50px;
+}
+.projectContent h5:first-of-type, .projectSideBar h5:first-of-type {
+    margin-top: 35px;
+}
+.projectView .projectSideBar {
+    float: right;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    width: 220px;
+    padding-right: 70px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "roboto" , sans-serif;
+}
+.projectSideBar ul {
+    list-style: none;
+/*    padding-left: 10px;*/
+    margin: 0 0 0 0;
+    font-weight: 300;
+}
+.projectView p {
+    margin: 5px 0 10px 0;
+    font-weight: 300;
+}
+
+/* projects' link style */
+#pro_port2013 .viewLink{color: #1abc9c;}
+#pro_port2013 .viewLink:hover{border-bottom: 1px solid #1abc9c;}
+
+#pro_port2012 .viewLink{color: #ffa751;}
+#pro_port2012 .viewLink:hover {border-bottom: 1px solid #ffa751;}
+
+#pro_beacon .viewLink {color: #50c4ff;}
+#pro_beacon .viewLink:hover {border-bottom: 1px solid #84d5ff;}
+
+#pro_home .viewLink {color: #A1887F;}
+#pro_home .viewLink:hover {border-bottom: 1px solid #A1887F;}
+
+#pro_vw .viewLink {color: #1E88E5;}
+#pro_vw .viewLink:hover {border-bottom: 1px solid #1E88E5;}
+
+/* projectView Title Background-imgs */
+#pro_port2012 h1{background-image: url(../images/title_port2012.jpg);}
+#pro_bubbleCat h1{background-image: url(../images/title_bubble.jpg);}
+#pro_college h1 {background-image: url(../images/title_college.jpg);}
+#pro_oasys h1 {background-image: url(../images/title_oasys.jpg);}
+#pro_port2013 h1 {background-image: url(../images/title_port2013.jpg);}
+#pro_bar h1 {background-image: url(../images/title_bar.jpg);}
+#pro_graphic h1 {background-image: url(../images/title_graphic.jpg);}
+#pro_gradu h1 {background-image: url(../images/title_gradu.jpg);}
+#pro_raago h1 {background-image: url(../images/title_raago.jpg);}
+#pro_beacon h1 {background-image: url(../images/title_beacon.jpg);}
+#pro_home h1 {background-image: url(../images/title_home.jpg);}
+#pro_vw h1 {background-image: url(../images/title_vw.jpg);}
+#pro_pills h1 {background-image: url(../images/title_pills.jpg);}
+
+/*#pro_home p span, #pro_home a:hover {color:#a1887f;}*/
+.processFigure {
+    width: 580px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow:0 0 1px #c8cdce;
+    margin-top: 5px;
+}
+
+/*
+.hcidProjects a { text-decoration: underline;
+color: #7f8c8d;}
+#pro_vw {text-decoration-color: #297dc7;}
+*/
+
+.projectView .annotations {
+    color: #c8cdce;
+    font-size: 12px;
+    text-align: right;
+    font-style: italic;
+    margin-top: -5px;
+}

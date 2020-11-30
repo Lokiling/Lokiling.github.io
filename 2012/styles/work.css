@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* Common Part*/
+.content {
+	margin-left: 180px;
+	margin-right: 20px;
+	padding-bottom: 20px;
+}
+.cards {
+	width: 780px;
+	height: auto;
+	background-color:#FFF;
+	border: 1px solid #e4e4e4;
+	margin: 0px 0 30px 0;
+	padding: 20px 0 30px 0;
+}
+.workTitle {
+	font-size: 24px;
+	margin-left: 30px;
+}
+.workTitle span {
+	color: #f89857
+}
+
+
+.projects {
+	width: 340px;
+	border: 1px solid #d3d3d3;
+	margin-top: 20px;
+	display:inline-block;
+	margin-left: 32px;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transform: all 0.2s ease-out;
+}
+.projects:hover {
+    -moz-box-shadow: 0px 5px 10px #bfbfbf;
+    -webkit-box-shadow: 0px 5px 10px #bfbfbf;
+    box-shadow: 0px 5px 10px #bfbfbf;
+	border-color:  #bebebe;
+	-webkit-transition: all 0.2s default;
+	-moz-transform: all 0.2s default;
+}
+
+.workBgImg {
+	height: 205px;
+	position: relative;
+	overflow: hidden;
+	z-index: 10;
+}
+.overlay {
+    -moz-box-shadow: 0px -1px 15px #bbb;
+    -webkit-box-shadow: 0px -1px 15px #bbb;
+    box-shadow: 0px -1px 15px #bbb;
+	position: absolute;
+	background: #f0f0f0;
+	width: 100%;
+	bottom: -115px;
+}
+.overlay p{
+	margin: 10px 10px 10px 25px;
+	color: #787878;
+	font-size: 16px;
+}
+.overlay-content{
+	height: 115px;
+}
+.overlay-details {
+	font-size: 13px;
+	color: #a5a5a5;
+	margin: 0 25px 0 25px;
+	height: 85px;
+}
+.overlay-date {
+	background-image: url(../imgs/dateIcon.png);
+	background-repeat:no-repeat;
+	color: #c0c0c0;
+	height: 20px;
+	line-height: 22px;
+	font-size: 13px;
+	margin-left: 20px;
+	padding-left: 30px;
+	display:inline-block;
+}
+.overlay-loct {
+	background-image: url(../imgs/loctIcon.png);
+	background-repeat:no-repeat;
+	color: #c0c0c0;
+	height: 20px;
+	line-height: 22px;
+	font-size: 13px;
+	margin-left: 25px;
+	padding-left: 20px;
+	display:inline-block;
+}
+
+
+#bg-bubble {
+	background-image:url(../imgs/bgbubble1.jpg);
+}
+#bg-bar {
+	background-image:url(../imgs/bgbar.jpg);
+}
+#bg-gradu {
+	background-image:url(../imgs/bggradu.jpg);
+}
+#bg-oa {
+	background-image:url(../imgs/bgoa.jpg);
+}
+#bg-univer {
+	background-image:url(../imgs/bguniver.jpg);
+}
+#bg-pics{
+	background-image:url(../imgs/bgpics.jpg);
+}
+#bg-portfolio{
+	background-image:url(../imgs/bgportfolio.jpg);
+}

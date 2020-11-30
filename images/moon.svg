@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="584px" height="618px" viewBox="0 0 584 618" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+            <stop stop-color="#E4F6FF" stop-opacity="0.115036232" offset="0%"></stop>
+            <stop stop-color="#C5E9FF" stop-opacity="0.05" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="5" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.735420612   0 0 0 0 0.908960965   0 0 0 0 1  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path id="path-3" d="M338.5,432 C390.138624,432 432,390.138624 432,338.5 C432,286.861376 390.138624,245 338.5,245 C286.861376,245 245,286.861376 245,338.5 C245,390.138624 286.861376,432 338.5,432 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HomePic" transform="translate(-1216.000000, 0.000000)">
+            <g id="Group-2" transform="translate(1216.000000, -60.000000)">
+                <path d="M339.5,564 C463.487926,564 564,463.487926 564,339.5 C564,215.512074 463.487926,115 339.5,115 C215.512074,115 115,215.512074 115,339.5 C115,463.487926 215.512074,564 339.5,564 Z" id="Mask" fill="url(#radialGradient-1)" opacity="0.535039646"></path>
+                <path d="M339,678 C526.22453,678 678,526.22453 678,339 C678,151.77547 526.22453,0 339,0 C151.77547,0 0,151.77547 0,339 C0,526.22453 151.77547,678 339,678 Z" id="Mask" fill-opacity="0.5" fill="url(#radialGradient-1)" opacity="0.535039646"></path>
+                <path d="M339.5,515 C436.425974,515 515,436.425974 515,339.5 C515,242.574026 436.425974,164 339.5,164 C242.574026,164 164,242.574026 164,339.5 C164,436.425974 242.574026,515 339.5,515 Z" id="Mask" fill-opacity="0.05" fill="#C8DEFC"></path>
+                <path d="M339,475 C414.110726,475 475,414.110726 475,339 C475,263.889274 414.110726,203 339,203 C263.889274,203 203,263.889274 203,339 C203,414.110726 263.889274,475 339,475 Z" id="Mask" fill-opacity="0.2" fill="#DBFBFF"></path>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#FEFFED" filter="url(#filter-2)" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

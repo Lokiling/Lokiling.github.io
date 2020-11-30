@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UI of College Information | Mochen</title>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/detail.css" rel="stylesheet" type="text/css" />
+<link href="../styles/quickMenu.css" rel="stylesheet" type="text/css" />
+<link href="../styles/jsslider.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="../scripts/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header">
+    	<div class="header-inner">
+    		<a href="../index.html"><div class="logo"></div></a>
+            <div class="navi">
+            	<ul>
+                	<a href="../index.html">
+                    	<li class="navi-item current">
+                    		Works
+                    </li></a>
+                    <a href="../resume.html">
+                    	<li class="navi-item">
+                    		Resume
+                    </li></a>
+                    <a href="../about.html">
+                    	<li class="navi-item">
+                    		About
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+	</div>
+    
+	<!--Contents-->
+    <div class="container">
+    <div class="space-bar"></div>
+    
+    	<!--Left - QuickMenu-->
+    	<div class="quickMenu">
+            <div class="menuCatalog">
+            	<div class="menuSubtitle">Game Designs</div>
+                <ul>
+                	<a href="bubblecat.html"><li class="menuItem">Bubble Cats</li></a>
+               		<a href="loungebar.html"><li class="menuItem">Louge Bar</li></a>
+                </ul>
+                
+            	<div class="menuSubtitle">Design Projects</div>
+                <ul>
+                	<a href="gradu.html"><li class="menuItem">Graduation System</li></a>
+					<a href="oasys.html"><li class="menuItem">OA System</li></a>
+                </ul>
+                
+           	  <div class="menuSubtitle">Interaction Designs</div>
+                <ul>
+                	<li class="currentMenu">College Info UI</li>
+               	  <a href="myportfolio.html"><li class="menuItem">My Portfolio</li></a>
+                </ul>
+                
+                <a href="../index.html"><p class="menuBack"> ‹‹ Back to Works</p></a>
+                
+            </div>
+        </div>
+        <!--END Left Quickmenu-->
+
+        <!--Main Contents-->
+    	<div class="content">
+        	
+            <!-- Title Card -->
+   	  <div class="cards card-title" id="college-title">
+            	<div id="work-title">UI of <span>College Information</span></div>
+                <p>A college information system, including inform messages, upcoming events, courses reminder, etc.</p>
+            </div>
+            <!-- END - Title Card -->
+            
+            
+            <!-- main content-->
+          <div class="cards" id="mainContents">
+			<div id="slider">
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="../imgs/college/login.jpg" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+						  <p>Login page: Remember the last user info</p>
+					  </div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/college/login2.jpg" alt="Slide 2">
+				  		<div class="caption">
+		 				  <p>Login page: No cookies</p>
+					  </div>
+			 	  </div>
+					<div class="slide">
+						<img src="../imgs/college/index.jpg" alt="Slide 3">
+				  		<div class="caption">
+		 				  <p>Index page, implemented by HTML & CSS</p>
+					  </div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/college/manage.jpg" alt="Slide 4">
+						<div class="caption">
+                       	  <p>Another page and color style</p>
+					  </div>
+               	  </div>
+				</div>
+<!--				<a href="#" class="prev"><img src="../imgs/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../imgs/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+                <a href="#"><div class="enable prev" id="sliderprev">‹‹</div></a>
+				<a href="#"><div class="enable next" id="slidernext">››</div></a>
+			</div>
+<!--			<img src="../imgs/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+			</div>
+
+            <!--Keywords-->
+			<div class="subtitle">Keywords</div>
+                <p class="describe">Interaction design, UI design, wireframe, front-end programming, user experience</p>
+                
+                
+			<!--Overview-->
+            <div class="subtitle">Overview</div>
+            <p class="describe">Often, college students cannot get messages and events' information of school in time. For instance, many of my classmates missed a lot of valuable lecture, because of the delayed inform. So my friend, Siyuan Jia, and I had an idea to solve this problem: building a web site which will collect these kinds of information for college students. We thought this website should include some helpful feature, such as lecture reminder, courses reminder, etc. So I started to design the UI to make the idea came true. </p>
+            <p class="describe">However, he was so luck that he got a chance to study abroad in France. Due to the time differences and the difficulty to communicate, we could not complish it any more. But I still made a demo without back-end program.</p>
+		  </div>
+            <!-- END main content-->
+            
+            <!-- right sidebar -->
+			<div class="cards" id="rightColumn">
+				<div class="subtitle">Type</div>
+           	  		<p>Interaction design<br />
+              		User Interface design<br />
+           	  		Programming</p>
+				<div class="subtitle">Time</div>
+                	<p>2010.10 - 2010.12</p>
+       	  	  <div class="subtitle">Methods</div>
+					<p>Mind Mapping<br />
+					  Sketching<br/>
+					  Prototyping<br />
+			        Brainstorming</p>
+				<div class="subtitle">Tools</div>
+    				<p>
+                    XMind<br />
+                    Word<br />
+                	Photoshop<br />
+              		Dreamweaver</p>
+            </div>
+            <!-- END - right sidebar -->
+            
+            <div class="clear"></div>
+            <div class="pageNav">
+            	<a href="oasys.html"><div class="pageButton enable">‹ Previous</div></a>
+   			  <a href="myportfolio.html"><div class="pageButton enable" id="nextButton">Next ›</div></a>
+            </div>
+        </div>
+        <!--END Main Contents-->
+    </div>
+    
+	<!--Footer-->
+	<div class="footer">
+    	<p>Copyright © <a href="about.html">MochenLiu</a> - All Rights Reserved | Last updated on Dec.16th, 2012</p>
+    </div>
+
+</body>
+</html>

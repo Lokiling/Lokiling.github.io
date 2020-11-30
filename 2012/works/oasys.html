@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OA system | Mochen</title>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/detail.css" rel="stylesheet" type="text/css" />
+<link href="../styles/quickMenu.css" rel="stylesheet" type="text/css" />
+<link href="../styles/jsslider.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="../scripts/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header">
+    	<div class="header-inner">
+    		<a href="../index.html"><div class="logo"></div></a>
+            <div class="navi">
+            	<ul>
+                	<a href="../index.html">
+                    	<li class="navi-item current">
+                    		Works
+                    </li></a>
+                    <a href="../resume.html">
+                    	<li class="navi-item">
+                    		Resume
+                    </li></a>
+                    <a href="../about.html">
+                    	<li class="navi-item">
+                    		About
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+	</div>
+    
+	<!--Contents-->
+    <div class="container">
+    <div class="space-bar"></div>
+    
+    	<!--Left - QuickMenu-->
+    	<div class="quickMenu">
+            <div class="menuCatalog">
+            	<div class="menuSubtitle">Game Designs</div>
+                <ul>
+                	<a href="bubblecat.html"><li class="menuItem">Bubble Cats</li></a>
+               		<a href="loungebar.html"><li class="menuItem">Louge Bar</li></a>
+                </ul>
+                
+            	<div class="menuSubtitle">Design Projects</div>
+                <ul>
+                	<a href="graduation.html"><li class="menuItem">Graduation System</li></a>
+               		<li class="currentMenu">OA System</li>
+                </ul>
+                
+           	  <div class="menuSubtitle">Interaction Designs</div>
+                <ul>
+                	<a href="collegeinfo.html"><li class="menuItem">College Info UI</li></a>
+               	  <a href="myportfolio.html"><li class="menuItem">My Portfolio</li></a>
+                </ul>
+                
+                <a href="../index.html"><p class="menuBack"> ‹‹ Back to Works</p></a>
+                
+            </div>
+        </div>
+        <!--END Left Quickmenu-->
+
+        <!--Main Contents-->
+    	<div class="content">
+        	
+            <!-- Title Card -->
+        	<div class="cards card-title" id="oa-title">
+            	<div id="work-title"><span>Office Automation</span> System</div>
+                <p>An office automation system, including emails, schedule management, contacts, meeting management, etc.</p>
+            </div>
+            <!-- END - Title Card -->
+            
+            
+            <!-- main content-->
+		  <div class="cards" id="mainContents">
+		  <div id="slider">
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="../imgs/oa/loginpage.jpg" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+						  <p>Login page</p>
+						</div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/oa/login.jpg" alt="Slide 2">
+				  		<div class="caption">
+		 				  <p>Some details: input box and error alert</p>
+						</div>
+				 	</div>
+					<div class="slide">
+						<img src="../imgs/oa/index.jpg" alt="Slide 3">
+				  		<div class="caption">
+		 				  <p>Index & main menu page</p>
+					  </div>
+					</div>
+					<div class="slide">
+						<img src="../imgs/oa/email.jpg" alt="Slide 4">
+						<div class="caption">
+                       	  <p>Email page</p>
+					  </div>
+               	  </div>    
+					<div class="slide">
+						<img src="../imgs/oa/usecase.jpg" alt="Slide 5">
+						<div class="caption">
+                       	  <p>Use Case Diagram</p>
+						</div>
+               	  </div>
+					<div class="slide">
+						<img src="../imgs/oa/icss.jpg" alt="Slide 6">
+						<div class="caption">
+                       	  <p>A building of ChinaSoft</p>
+					  </div>
+               	  </div>                
+
+				</div>
+<!--				<a href="#" class="prev"><img src="../imgs/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../imgs/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+                <a href="#"><div class="enable prev" id="sliderprev">‹‹</div></a>
+				<a href="#"><div class="enable next" id="slidernext">››</div></a>
+			</div>
+<!--			<img src="../imgs/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+		</div>
+
+            <!--Keywords-->
+			<div class="subtitle">Keywords</div>
+                <p class="describe">Interaction design, interface design,  wireframe, team work, programming, user experience, logical design, HTML, CSS3, Java</p>
+                
+                
+			<!--Overview-->
+            <div class="subtitle">Overview</div>
+            <p class="describe">Our school provided us a chance to get an intern in ChinaSoft International at the beginning of our senior year. Our main work in ChinaSoft was to build an OA system including email, contacts, meeting management, schedule, etc. I was the designer of our team, because I had gotten a website design course in my junior year and interesting in UI / UE. </p>
+            <p class="describe">At the end of our intern, our team got the Best Team Award because our UI was the best and we implemented all of the features.
+            <!--My role-->			</p>
+            <div class="subtitle">My Role</div>
+            <p class="describe">In our team, I was the only UI designer and front-end programmer. Reading some relevant books, e.g. Don't Make Me Think, CSS Cookbook etc., was very helpful to me during this project. These books let me know how to design a user-friendly website, how to using CSS and HTML to implement my ideas and how to think like a designer.</p>
+            <p class="describe">I think this project is significant to me because it gave me a chance to take part in the whole process of design and implement a project. Furthermore, it let me know that I have some potential to be a UI / UE designer. </p>
+</div>
+            <!-- END main content-->
+            
+            <!-- right sidebar -->
+            <div class="cards" id="rightColumn">
+           	  <div class="subtitle">Type</div>
+              <p>User Interface Design<br />
+                Interaction design<br />
+              Programming</p>
+<div class="subtitle">Time</div>
+                <p>2010.09</p>
+            	<div class="subtitle">Methods</div>
+		  <p>Mind Mapping<br/>
+                    Sketching<br/>
+       		Prototyping</p>
+       	  	  <div class="subtitle">Tools</div>
+                <p>
+                    Word<br />
+                    PowerPoint<br />
+                	Photoshop<br />
+                    Dreamweaver<br />
+                    Eclipse<br />
+       		  		SQL Server<br />
+                    UML</p>
+                <div class="subtitle">Team members</div>
+                	<p>
+                    Jianwei Wu<br />
+                    Xuan Jing<br />
+                    Bin Liu<br />
+              		Yi Wang<br />
+                	Song Bai<br />
+                    Zhao Li<br /></p>
+       	  </div>
+            <!-- END - right sidebar -->
+            
+            <div class="clear"></div>
+            <div class="pageNav">
+            	<a href="graduation.html"><div class="pageButton enable">‹ Previous</div></a>
+       			<a href="collegeinfo.html"><div class="pageButton enable" id="nextButton">Next ›</div></a>
+            </div>
+        </div>
+        <!--END Main Contents-->
+    </div>
+    
+	<!--Footer-->
+	<div class="footer">
+    	<p>Copyright © <a href="about.html">MochenLiu</a> - All Rights Reserved | Last updated on Dec.16th, 2012</p>
+    </div>
+
+</body>
+</html>

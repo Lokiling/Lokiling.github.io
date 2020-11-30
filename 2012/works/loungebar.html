@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lounge Bar | Mochen</title>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/detail.css" rel="stylesheet" type="text/css" />
+<link href="../styles/quickMenu.css" rel="stylesheet" type="text/css" />
+<link href="../styles/jsslider.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="../scripts/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,                                                 
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header">
+    	<div class="header-inner">
+    		<a href="../index.html"><div class="logo"></div></a>
+            <div class="navi">
+            	<ul>
+                	<a href="../index.html">
+                    	<li class="navi-item current">
+                    		Works
+                    </li></a>
+                    <a href="../resume.html">
+                    	<li class="navi-item">
+                    		Resume
+                    </li></a>
+                    <a href="../about.html">
+                    	<li class="navi-item">
+                    		About
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+	</div>
+    
+	<!--Contents-->
+    <div class="container">
+    <div class="space-bar"></div>
+    
+    	<!--Left - QuickMenu-->
+    	<div class="quickMenu">
+            <div class="menuCatalog">
+            	<div class="menuSubtitle">Game Designs</div>
+                <ul>
+                	<a href="bubblecat.html"><li class="menuItem">Bubble Cats</li></a>
+               		<li class="currentMenu">Louge Bar</li>
+                </ul>
+                
+            	<div class="menuSubtitle">Design Projects</div>
+                <ul>
+                	<a href="graduation.html"><li class="menuItem">Graduation System</li>
+               		<a href="oasys.html"><li class="menuItem">OA System</li></a>
+                </ul>
+                
+           	  <div class="menuSubtitle">Interaction Designs</div>
+                <ul>
+                	<a href="collegeinfo.html"><li class="menuItem">College Info UI</li></a>
+               	  <a href="myportfolio.html"><li class="menuItem">My Portfolio</li></a>
+                </ul>
+                
+                <a href="../index.html"><p class="menuBack"> ‹‹ Back to Works</p></a>
+                
+            </div>
+        </div>
+        <!--END Left Quickmenu-->
+
+        <!--Main Contents-->
+    	<div class="content">
+        	
+            <!-- Title Card -->
+        	<div class="cards card-title" id="bar-title">
+            	<div id="work-title"><span>Lounge</span> Bar</div>
+                <p><a href="http://mixi.jp/run_appli.pl?id=18685" class="link" target="_blank">Lounge Bar</a> is a SIM game. Players can manage a fantastic bar. It's mainly focus on the Japanese market.</p>
+            </div>
+            <!-- END - Title Card -->
+            
+            
+            <!-- main content-->
+		    <div class="cards" id="mainContents">
+			<div id="slider">
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="../imgs/bar/flow.jpg" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+						  <p>A feature's flow diagram and its UI</p>
+						</div>
+        </div>
+					<div class="slide">
+						<img src="../imgs/bar/sketch.jpg" alt="Slide 2">
+				  		<div class="caption">
+			 				<p>One of my sketches</p>
+						</div>
+				 	</div>
+					<div class="slide">
+						<img src="../imgs/bar/valentine's-day.jpg" alt="Slide 3">
+		  				<div class="caption">
+							<p>My first independent work: the activity of Valentine's Day </p>
+						</div>
+		 	  	  </div>
+					<div class="slide">
+						<img src="../imgs/bar/activity.jpg" alt="Slide 4">
+					  <div class="caption">
+						<p>A common activity: Master a recipe</p>
+					  </div>
+		 	  	  </div>
+					<div class="slide">
+						<img src="../imgs/bar/barrel.jpg" alt="Slide 5">
+					  	<div class="caption">
+					 	  <p>A design about upgrading the barrel</p>
+				 	  </div>
+		 	  	  </div>
+					<div class="slide">
+						<img src="../imgs/bar/wireframe.jpg" alt="Slide 6">
+						<div class="caption">
+							<p>A successful feature I designed: Decoration Upgrading System</p>
+					  </div>
+       			  </div>
+					<div class="slide">
+						<img src="../imgs/bar/sketch3.jpg" alt="Slide 7">
+						<div class="caption">
+						  <p>One of my sketches: Design the UI of the Quest System</p>
+					  </div>
+       			  </div>
+                  
+				  <!--<div class="slide">
+						<a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="../imgs/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+<div class="caption">
+							<p>Save my love for loneliness</p>
+						</div>
+					</div>-->
+				</div>
+<!--				<a href="#" class="prev"><img src="../imgs/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../imgs/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+                <a href="#"><div class="enable prev" id="sliderprev">‹‹</div></a>
+				<a href="#"><div class="enable next" id="slidernext">››</div></a>
+			</div>
+<!--			<img src="../imgs/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+		</div>
+
+            <!--Keywords-->
+<div class="subtitle">Keywords</div>
+                <p class="describe">Interaction design, wireframe, web game design, team work, data analysis, user experience, logic design</p>
+                
+                
+			<!--Overview-->
+            <div class="subtitle">Overview</div>
+            <p class="describe">I got an intern job in Happy Elements Dec. 2010, and Lounge Bar was the first team I participated in. Lounge Bar is a typical SIM game: players own a small bar at the start. They can decorate their bar and learn new recipes of cocktails and desserts to attract more and more customers and earn more and more money.</p>
+            <p class="describe">Lounge Bar is on <a href="http://mixi.jp/" class="link" target="_blank">Mixi</a>, a primary social network of Japan, facebook and Kaixin. It started operation in Feb. 2009. As a 1-year-old game, Lounge Bar had some technical issues and lots of brilliant ideas were confined. So we must designed new cool features and must be sure that it was feasible in programming. Our team was not so large, so all of members could sit down and had a brainstorm. Working with them, who are energetic and cooperative, I not only learned how to design a feature and wireframe, but also learned team spirit and patience. </p>
+                
+            <!--My role-->
+			<div class="subtitle">My Role</div>
+            <p class="describe">At the beginning of my internship, I needed to adapt to work with a team. It's different from those projects I had done by myself during college. In a team, everyone has his / her own responsibility. As a product manager, most of my works needed to communicate with others, like telling programmers what was the feature, how to use it and what is the workflow, discussing with art designers how to make a UI more friendly and comfortable.</p>
+            <p class="describe">I designed two extremely successful features of this game: Decoration Upgrading System (you will see one of my sketches of this system above) and Special Guest. The former one   continuously improve Lounge Bar's revenue on Mixi, easy to reuse; and the later one reversed the decline of Lounger Bar's DAU (Daily Active User).</p>
+            <p class="describe">Thanks to Lounge Bar Team, I thought I grew a lot. I know how to make a user friendly UI, how to use relevant software, such as Axure, Visio, Balsamiq, etc. how to analysis data and, more importantly, how to work within a team.</p>
+          </div>
+            <!-- END main content-->
+            
+            <!-- right sidebar -->
+            <div class="cards" id="rightColumn">
+            	<div class="subtitle">Type</div>
+                <p>Game design & Interaction design</p>
+            	<div class="subtitle">Time</div>
+                <p>2010.12 - 2012.02</p>
+            	<div class="subtitle">Methods</div>
+                <p>Market Research<br/>
+              Data analysis<br/>
+                    Mind Mapping<br/>
+                    Sketching<br/>
+                    Prototyping<br/>
+                    Brainstorming<br/>
+                    Iterative Design
+                </p>
+            	<div class="subtitle">Tools</div>
+                <p>
+                	Photoshop<br />
+                    Axure<br />
+                    Balsamiq<br/>
+                    XMind<br />
+                    Visio<br />
+                  	Flash<br />
+                    Word<br />
+                    Excel
+            </p>
+            </div>
+            <!-- END - right sidebar -->
+            
+            <div class="clear"></div>
+            <div class="pageNav">
+            	<a href="bubblecat.html"><div class="pageButton enable">‹ Previous</div></a>
+   			  <a href="graduation.html"><div class="pageButton enable" id="nextButton">Next ›</div></a>
+            </div>
+        </div>
+        <!--END Main Contents-->
+    </div>
+    
+	<!--Footer-->
+	<div class="footer">
+    	<p>Copyright © <a href="about.html">MochenLiu</a> - All Rights Reserved | Last updated on Dec.16th, 2012</p>
+    </div>
+
+</body>
+</html>

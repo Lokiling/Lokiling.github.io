@@ -1,0 +1,42 @@
+.red_bg { background-color: rgba(242, 131, 107, 0.9); }
+.red_bg_dark { background-color: #e3694f; }
+.red_border { border-bottom-color: #e3694f; }
+.red_fonts { color: #f2836b; }
+.red_fonts span { color: #f2836b; }
+nav.red a { color: #dc5e42; }
+nav.red a:hover { color: #ecf0f1;}
+nav.red .nav_current { background-color: #e3694f; }
+
+.green_bg { background-color: rgba(26, 188, 156, 0.9); }
+.green_bg_dark { background-color: #16a085; }
+.green_border { border-bottom-color: #16a085; }
+.green_fonts { color: #1abc9c; }
+.green_fonts span { color: #1abc9c; }
+nav.green a { color: #16a085; }
+nav.green a:hover { color: #ecf0f1;} 
+nav.green .nav_current { background-color: #16a085; }
+
+.yellow_bg { background-color: rgba(253, 200, 43, 0.9); }
+.yellow_bg_dark { background-color: #fda52b; }
+.yellow_border { border-bottom-color: #fda52b; }
+.yellow_fonts { color: #f1c40f; }
+.yellow_fonts span { color: #fdc82b; }
+nav.yellow a { color: #fda52b; }
+nav.yellow a:hover {color: #ecf0f1; }
+nav.yellow .nav_current { background-color: #fda52b; }
+
+.blue_bg { background-color: rgba(84, 190, 239, 0.9); }
+.blue_bg_dark { background-color: #00a2e0; }
+.blue_border { border-bottom-color: #00a2e0; }
+.blue_fonts { color: #54beef; }
+.blue_fonts span { color: #54beef; }
+nav.blue a { color: #0c93c7; }
+nav.blue a:hover {color: #ecf0f1; }
+nav.blue .nav_current { background-color: #00a2e0; }
+
+.white_bg { background-color:#f9f9f9; }
+.white_border { border-bottom-color: #d9dfe1; }
+.white_fonts { color: #f9f9f9;}
+nav.white a { color: #d9dfe1; }
+nav.white a:hover {color: #97a8ad; }
+nav.white .nav_current { background-color: #d9dfe1; }

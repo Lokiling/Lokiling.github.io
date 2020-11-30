@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Portfolio Design | Mochen</title>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/detail.css" rel="stylesheet" type="text/css" />
+<link href="../styles/quickMenu.css" rel="stylesheet" type="text/css" />
+<link href="../styles/jsslider.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="../scripts/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header">
+    	<div class="header-inner">
+    		<a href="../index.html"><div class="logo"></div></a>
+            <div class="navi">
+            	<ul>
+                	<a href="../index.html">
+                    	<li class="navi-item current">
+                    		Works
+                    </li></a>
+                    <a href="../resume.html">
+                    	<li class="navi-item">
+                    		Resume
+                    </li></a>
+                    <a href="../about.html">
+                    	<li class="navi-item">
+                    		About
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+	</div>
+    
+	<!--Contents-->
+    <div class="container">
+    <div class="space-bar"></div>
+    
+    	<!--Left - QuickMenu-->
+    	<div class="quickMenu">
+            <div class="menuCatalog">
+            	<div class="menuSubtitle">Game Designs</div>
+                <ul>
+                	<a href="bubblecat.html"><li class="menuItem">Bubble Cats</li></a>
+               		<a href="loungebar.html"><li class="menuItem">Louge Bar</li></a>
+                </ul>
+                
+            	<div class="menuSubtitle">Design Projects</div>
+                <ul>
+                	<a href="gradu.html"><li class="menuItem">Graduation System</li></a>
+					<a href="oasys.html"><li class="menuItem">OA System</li></a>
+                </ul>
+                
+           	  <div class="menuSubtitle">Interaction Designs</div>
+                <ul>
+                	<a href="collegeinfo.html"><li class="menuItem">College Info UI</li></a>
+               		<li class="currentMenu">My Portfolio</li>
+                </ul>
+                
+              <a href="../index.html"><p class="menuBack"> ‹‹ Back to Works</p></a>
+                
+            </div>
+        </div>
+        <!--END Left Quickmenu-->
+
+        <!--Main Contents-->
+    	<div class="content">
+        	
+            <!-- Title Card -->
+   	  <div class="cards card-title" id="prot-title">
+            	<div id="work-title">My <span>Portfolio</span></div>
+                <p> Yep! It's this website. It has been designed and implemented all by myself and the process is full of fun!!</p>
+            </div>
+            <!-- END - Title Card -->
+            
+            
+            <!-- main content-->
+          <div class="cards" id="mainContents">
+			<div id="slider">
+				<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="../imgs/myportfolio/style1.jpg" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+						  <p>Another style, but discard it...</p>
+					  </div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/myportfolio/style2.jpg" alt="Slide 2">
+				  		<div class="caption">
+		 				  <p>An discarded scheme: rounded-corner and different BG color</p>
+					  </div>
+			 	  </div>
+					<div class="slide">
+						<img src="../imgs/myportfolio/indexstyle.jpg" alt="Slide 3">
+				  		<div class="caption">
+		 				  <p>A draft of works page: the left Quick-Navi is too complex.</p>
+					  </div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/myportfolio/indexstyle2.jpg" alt="Slide 4">
+						<div class="caption">
+                       	  <p>Another style of works page.</p>
+					  </div>
+               	  </div>
+                  <div class="slide">
+						<img src="../imgs/myportfolio/difcolor.jpg" alt="Slide 5">
+						<div class="caption">
+                       	  <p>Different colors that I had tried.</p>
+				    </div>
+               	  </div>
+                  <div class="slide">
+						<img src="../imgs/myportfolio/quickBar.jpg" alt="Slide 6">
+						<div class="caption">
+                       	  <p>Paid a lot working on the Quick-Navi to make it suitable.</p>
+				    </div>
+               	  </div>
+				</div>
+<!--				<a href="#" class="prev"><img src="../imgs/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../imgs/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+                <a href="#"><div class="enable prev" id="sliderprev">‹‹</div></a>
+				<a href="#"><div class="enable next" id="slidernext">››</div></a>
+			</div>
+<!--			<img src="../imgs/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+			</div>
+
+            <!--Keywords-->
+			<div class="subtitle">Keywords</div>
+                <p class="describe">Interaction design, UI design, independent design, wireframe, front-end programming, HTML, CSS3</p>
+                
+                
+			<!--Overview-->
+            <div class="subtitle">Overview</div>
+            <p class="describe">Hey! Welcome to my portfolio! The reason I build this website is to show my experience of UI and UX design and, more importantly, to pursue  a Master's Degree in Human-Computer Interaction.</p>
+            <p class="describe">It took me about 1 week to think and design this website. I had try some different schemes, such as different color and diverse styles, and decided to use this style. I prefer the simple design without numerous inessential decorative elements. I got inspirations from the design of <a href="https://www.google.com/landing/now/" class="link"  target="_blank">Google Now</a>, which every information comes out within a white card. I think it is so lovely that I use a lot of &quot;cards&quot; in my portfolio as you see.</p>
+            <p class="describe">Designing things is always fun to me. I love design! It will give me a sense of achievement when I implement my ideas and show it to my friends! My dream is to be a UX designer and make people's lives much easier.</p>
+          </div>
+            <!-- END main content-->
+            
+            <!-- right sidebar -->
+		  <div class="cards" id="rightColumn">
+				<div class="subtitle">Type</div>
+           	  		<p>Interaction design<br />
+              		User Interface design<br />
+           	  		Programming</p>
+				<div class="subtitle">Time</div>
+                	<p>2012.11. 28 - 12. 15</p>
+       	  	  <div class="subtitle">Methods</div>
+					<p>Sketching<br/>
+			  Prototyping</p>
+				<div class="subtitle">Tools</div>
+    				<p>
+                	Photoshop<br />
+              		Dreamweaver<br />
+                    Balsamiq</p>
+            </div>
+            <!-- END - right sidebar -->
+            
+            <div class="clear"></div>
+            <div class="pageNav">
+            	<a href="collegeinfo.html"><div class="pageButton enable">‹ Previous</div></a>
+   				<div class="pageButton disable" id="nextButton">Next ›</div>
+            </div>
+        </div>
+        <!--END Main Contents-->
+    </div>
+    
+	<!--Footer-->
+	<div class="footer">
+    	<p>Copyright © <a href="about.html">MochenLiu</a> - All Rights Reserved | Last updated on Dec.16th, 2012</p>
+    </div>
+
+</body>
+</html>

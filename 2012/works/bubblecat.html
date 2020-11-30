@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bubble Cat | Mochen</title>
+<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+<link href="../styles/detail.css" rel="stylesheet" type="text/css" />
+<link href="../styles/quickMenu.css" rel="stylesheet" type="text/css" />
+<link href="../styles/jsslider.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="../scripts/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<!--Header-->
+	<div class="header">
+    	<div class="header-inner">
+    		<a href="../index.html"><div class="logo"></div></a>
+            <div class="navi">
+            	<ul>
+                	<a href="../index.html">
+                    	<li class="navi-item current">
+                    		Works
+                    </li></a>
+                    <a href="../resume.html">
+                    	<li class="navi-item">
+                    		Resume
+                    </li></a>
+                    <a href="../about.html">
+                    	<li class="navi-item">
+                    		About
+                    </li></a>
+                </ul>
+            </div>
+        </div>
+	</div>
+    
+	<!--Contents-->
+    <div class="container">
+    <div class="space-bar"></div>
+    
+    	<!--Left - QuickMenu-->
+    	<div class="quickMenu">
+            <div class="menuCatalog">
+            	<div class="menuSubtitle">Game Designs</div>
+                <ul>
+                	<li class="currentMenu">Bubble Cats</li>
+               	  <a href="loungebar.html"><li class="menuItem">Louge Bar</li></a>
+                </ul>
+                
+            	<div class="menuSubtitle">Design Projects</div>
+                <ul>
+                	<a href="graduation.html">
+                	<li class="menuItem">Graduation System</li></a>
+               	  <a href="oasys.html"><li class="menuItem">OA System</li></a>
+                </ul>
+                
+           	  <div class="menuSubtitle">Interaction Designs</div>
+                <ul>
+                	<a href="collegeinfo.html"><li class="menuItem">College Info UI</li></a>
+               	  <a href="myportfolio.html"><li class="menuItem">My Portfolio</li></a>
+                </ul>
+                
+                <a href="../index.html"><p class="menuBack"> ‹‹ Back to Works</p></a>
+            </div>
+        </div>
+        <!--END Left Quickmenu-->
+
+        <!--Main Contents-->
+    	<div class="content">
+        	
+            <!-- Title Card -->
+        	<div class="cards card-title" id="bubble-title">
+            	<div id="work-title"><span>Bubble</span> Cat</div>
+                <p><a href="http://qqapp.qq.com/app/100629468.html" class="link" target="_blank">Bubble Cat</a> is a social game like <a href="https://www.facebook.com/appcenter/bubbleisland?fb_source=appcenter" class="link" target="_blank">Bubble Island</a> and <a href="https://www.facebook.com/appcenter/bubblewitch?fb_source=appcenter" data-appname="Bubble Witch Saga" class="link" target="_blank">Bubble Witch Saga</a> on facebook.</p>
+            </div>
+            <!-- END - Title Card -->
+            
+            
+            <!-- main content-->
+            <div class="cards" id="mainContents">
+            	<!-- Slider
+<div class="imagebox">
+                	<ul id="slider">
+                    	<li id="1">
+                        	<img src="../imgs/Market.png"  alt="grass-blades" width="480" height="320" />
+                            <p><span>Bubble Cat!!</span></p>
+                        </li>
+                        
+                        <li id="2">
+                        	<img src="../imgs/bggradu.jpg"  alt="grass-blades" width="480" height="320" />
+                            <p><span>graduation!!</span></p>
+                        </li>
+                    	<li id="3">
+                        	<img src="../imgs/bgbubble.jpg"  alt="grass-blades" width="480" height="320" />
+                            <p><span>Bubble Cat!!</span></p>
+                        </li>
+                        
+                        <li id="4">
+                        	<img src="../imgs/bggradu.jpg"  alt="grass-blades" width="480" height="320" />
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></p>
+					  </li>                        
+</ul>
+                    
+                    <ul id="thumb">
+                    	<li><a href="#1"><img src="../imgs/Market.png"  alt="grass-blades" width="50" height="50" /></a></li>
+                        <li><a href="#2"><img src="../imgs/bggradu.jpg"  alt="grass-blades" width="50" height="50" /></a></li>
+                     	<li><a href="#3"><img src="../imgs/bgbubble.jpg"  alt="grass-blades" width="50" height="50" /></a></li>
+                        <li><a href="#4"><img src="../imgs/bggradu.jpg"  alt="grass-blades" width="50" height="50" /></a></li>
+        </ul>
+			</div>
+                 END - Slider -->
+
+		<div id="slider">
+			<div id="slides">
+				<div class="slides_container">
+                
+					<div class="slide">
+						<img src="../imgs/bubble/loading.jpg" width="580" height="380" alt="Slide 1">
+						<div class="caption" style="bottom:0">
+						  <p>Loading Screen</p>
+						</div>
+				  </div>
+                  
+					<div class="slide">
+						<img src="../imgs/bubble/sketch1.jpg" width="580" height="380" alt="Slide 7">
+						<div class="caption">
+						  <p>A sketch of Invitation</p>
+						</div>
+				  </div>
+                  
+					<div class="slide">
+						<img src="../imgs/bubble/sketch.jpg" width="580" height="380" alt="Slide 6">
+						<div class="caption">
+						  <p>A sketch of Achievement System</p>
+						</div>
+				  </div>
+                  
+					<div class="slide">
+						<img src="../imgs/bubble/market.jpg" width="580" height="380" alt="Slide 4">
+<div class="caption">
+		<p>The wireframe of Market's UI</p>
+						</div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/bubble/marketUI.jpg" width="580" height="380" alt="Slide 5">
+					  <div class="caption">
+						<p>Market's UI im game</p>
+						</div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/bubble/mainUI.jpg" width="580" height="380" alt="Slide 2">
+				  <div class="caption">
+				<p>The main UI of Bubble Cat</p>
+						</div>
+				  </div>
+					<div class="slide">
+						<img src="../imgs/bubble/gameUI.jpg" width="580" height="380" alt="Slide 3">
+		  <div class="caption">
+		<p>This is the main UI when player start a game</p>
+						</div>
+				  </div>
+					<!--<div class="slide">
+						<a href="http://www.flickr.com/photos/aftab/3152515428/" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="../imgs/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+<div class="caption">
+							<p>Save my love for loneliness</p>
+						</div>
+					</div>-->
+				</div>
+<!--				<a href="#" class="prev"><img src="../imgs/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="../imgs/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>-->
+                <a href="#"><div class="enable prev" id="sliderprev">‹‹</div></a>
+				<a href="#"><div class="enable next" id="slidernext">››</div></a>
+			</div>
+<!--			<img src="../imgs/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+		</div>
+
+ 
+                
+                <!--Keywords-->
+<div class="subtitle">Keywords</div>
+                <p class="describe">Interaction design, wireframe, web game design, team work, data analysis, user experience, logic design</p>
+                
+                
+<!--Overview-->
+                <div class="subtitle">Overview</div>
+              <p class="describe">After a market research, our team found that Casual Games on facebook and other SNS, like Bejeweled and Triple Town, are more and more popular. They have a large number of active users and their revenues are also surprisingly high. So we decided to make a new Casual Game, <a href="http://qqapp.qq.com/app/100629468.html" class="link" target="_blank">Bubble Cat</a>, for Chinese users. </p>
+              <p class="describe">Players may be familiar with how to play Bubble Cat, because it likes Puzzle Bobble, a very popular and famous game. We started this project in early March, 2012. Our team was small, just included 3 programmers, 3 art designers, 1 game designer(also the team leader) and me, a product manager. However, all of the programmers and designer are professional, so we could make quick decisions and fast iterative. The beta version of Bubble Cat was finished in the late of May, 2012. Yep, we only spent 3 months to fulfill this new game project! And now, Bubble Cat is one of the most famous games on QZone and Pengyou --- both of them are Tencent's social networks, and has more than 3 million DAU(Daily Active Users) in China now.</p>
+                
+              <!--My role-->
+<div class="subtitle">My Role</div>
+            <p class="describe">As the product manager of Bubble Cat, I learned a lot from this project. This is the first game project that I participated from the beginning, so that setting up the rules of interfaces and interactions are not easy for me. Discussing with other professional product managers and reading many books of user experience and interaction design, I finished them subsequently. </p>
+              <p class="describe">All of the basic UI was designed by myself. My main tasks during this project were sketching, prototype design: wireframe designs and flowchart designs, copywriting, some of logical designs, interaction designs and communicating and discussing with programmers and art designer to make sure their works were following the initial design. Moreover, I need to use the analysis of users' data to improve my design and make sure all of UIs are user friendly.</p>
+      </div>
+            <!-- END main content-->
+            
+            <!-- right sidebar -->
+            <div class="cards" id="rightColumn">
+            	<div class="subtitle">Type</div>
+                <p>Game design & Interaction design</p>
+            	<div class="subtitle">Time</div>
+                <p>2012.03 - 2012.07</p>
+            	<div class="subtitle">Methods</div>
+                <p>Market Research<br/>
+                    Mind Mapping<br/>
+                    Sketching<br/>
+                    Persona<br/>
+                    Prototyping<br/>
+                    Data analysis<br/>
+                    Brainstorming<br/>
+                    Iterative Design
+                </p>
+            	<div class="subtitle">Tools</div>
+                <p>
+                	Photoshop<br />
+                    Axure<br />
+                    Balsamiq<br/>
+                    XMind<br />
+                    Visio<br />
+                    Flash<br />
+                    PowerPoint<br />
+                    Word
+                </p>
+            </div>
+            <!-- END - right sidebar -->
+            
+            <div class="clear"></div>
+            <div class="pageNav">
+            	<div class="pageButton disable">‹ Previous</div>
+           		<a href="loungebar.html"><div class="pageButton enable" id="nextButton">Next ›</div></a>
+            </div>
+        </div>
+        <!--END Main Contents-->
+    </div>
+    
+	<!--Footer-->
+	<div class="footer">
+    	<p>Copyright © <a href="about.html">MochenLiu</a> - All Rights Reserved | Last updated on Dec.16th, 2012</p>
+    </div>
+
+</body>
+</html>
