@@ -39,7 +39,7 @@
         switch (settings.animation) { 
           case 'dissolve':
             setTimeout(function(){el.animate({
-              textShadowBlur:20,
+              textShadowBlur:2,
               opacity: 0
             }, 500 , function() {
               index = $.inArray(el.text(), array)

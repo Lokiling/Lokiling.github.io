@@ -1,6 +1,6 @@
 $(document).ready(function(){
 //Parallax Scrolling Effect
-    $('#intro').parallax("50%", -0.5);
+//    $('#intro').parallax("50%", -0.5);
     $('#parallaxBG1').parallax("50%", 0.1);
     $('#parallaxBG2').parallax("50%", 0.2);
     $('#works').parallax("50%", 0.3);

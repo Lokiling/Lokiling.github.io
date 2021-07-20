@@ -34,9 +34,9 @@ nav.blue a { color: #0c93c7; }
 nav.blue a:hover {color: #ecf0f1; }
 nav.blue .nav_current { background-color: #00a2e0; }
 
-.white_bg { background-color:#f9f9f9; }
+.white_bg { background-color:#FBFCFF; }
 .white_border { border-bottom-color: #d9dfe1; }
 .white_fonts { color: #f9f9f9;}
-nav.white a { color: #d9dfe1; }
-nav.white a:hover {color: #97a8ad; }
+nav.white a { color: #A7ADB9; }
+nav.white a:hover {color: #262C38; }
 nav.white .nav_current { background-color: #d9dfe1; }

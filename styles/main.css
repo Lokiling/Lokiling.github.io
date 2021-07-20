@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 body {
-    background-color:#f3f3f3;
+    background-color:#FBFCFF;
     font-size: 15px;
 }
 .fontBold {
@@ -20,13 +20,16 @@ body {
 /* intro section*/
 #intro {
 /*	background: url(../images/homeMounts.png), url(../images/homePicBG.svg);*/
-    background: url(../images/newHome.jpg);
-    background-origin: padding-box;
-    background-size: cover;
+    background-image: url(../images/cover.svg);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: bottom 5% right 5%;
+    
 }
+
 #hello {
     font-family: 'Snippet', sans-serif;
-    color: #fefefe;
+    color: #6C7D95;
 /*    color: #272727;*/
     position: relative;
     top: 30%;
@@ -41,11 +44,10 @@ body {
 }
 #hello img{
     position: absolute;
-    top: 60px;
-    left: 19px;
+    top: 80px;
 }
 #cpM{
-    font-size: 245px;
+    font-size: 200px;
 /*
 	filter:alpha(opacity=0);
 	-moz-opacity:0;
@@ -73,7 +75,7 @@ nav li {
     list-style: none;
     font-size: 24px;
     line-height: 80px;
-    font-family: 'Voltaire', sans-serif;
+    font-family: 'Patua One', serif;
     text-align: center;
 }
 nav ul a{
@@ -100,10 +102,13 @@ nav>div, nav a>div{
 /*nav logo wrapper: rectangle*/
 nav a>div:first-child {
     background-color: #fdfdfd;
-    width: 70px;
+    width: 88px;
     height: 85px;
     top: -10px;
-    padding-left: 20px;
+/*
+    padding-left: 18px;
+    padding-right: 4px;
+*/
     border-bottom: 2px solid #95a5a6;
     
 }
@@ -133,16 +138,17 @@ nav a div span {
     position:absolute; 
     color:#fdfdfd; 
     top:10px; 
-    left:auto;
+    left:18px;
 }
 #logo_nav {
     position:relative;
     z-index:99;
-    width:50px;
+    left:16px;
+    width:56px;
     height:100%;
-    background-image:url(../images/logo_small.png);
+    background-image:url(../images/new_logo_small.svg);
     background-repeat: no-repeat;
-    background-position: 0 15px;
+    background-position: 0 20px;
     transition:  .4s;
     -moz-transition:  .4s;	/* Firefox 4 */
     -webkit-transition:  .4s;	/* Safari 和 Chrome */
@@ -183,7 +189,7 @@ nav a div span {
 }
 /* nav styles*/
 nav {
-    background-color: rgba(249,249,249,0.7);
+    background-color: #FBFCFF;
     border-bottom: 2px solid;
 }
 nav ul li .nav_current { color: #f5f5f5; }
@@ -212,7 +218,7 @@ section {
     padding-top: 30px;
     width: 920px;
     margin: 0 auto;
-    font-family: Voltaire;
+    font-family: 'Patua One', serif;
 }
 
 /* parallax Background section */
@@ -273,7 +279,7 @@ section {
     margin-left:20px;
 }
 .resumeContents {
-    font-family: 'roboto', sans-serif;
+    font-family: 'Poppins','roboto', sans-serif;
     font-weight: 300;
 }
 .rightColumn article.resumeContents {
@@ -351,7 +357,7 @@ article ul li{
     padding: 50px;
     font-weight: 300;
     padding-top: 130px;
-    font-family: "roboto" , sans-serif;
+    font-family: "Poppins" , sans-serif;
 /*    box-shadow: 0 2px 0 #00a2e0;*/
     position: relative;
 /*    top: -130px*/
@@ -420,7 +426,7 @@ aside {
 
 footer {
     color:#f5f5f5;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Poppins", sans-serif;
     position:relative;
 }
 
@@ -532,12 +538,13 @@ footer img {
 }
 
 #mapTitle {
-    position:relative; 
-    top: 300px; 
+    position:absolute;     
+    left: 50%;
+    transform: translate(-50%);
     z-index: 99;
     margin: 0;
     font-size: 70px; 
-    font-family:'Ubuntu'; 
+    font-family:'Patua One'; 
     text-align: center; 
     text-shadow: 0 2px 0 #fdfdfd; 
     color:#34495e;
@@ -548,7 +555,7 @@ footer img {
     margin-right: 10%;
     color:#fdfdfd;
     font-size: 50px; 
-    font-family:'Ubuntu'; 
+    font-family:'Poppins', sans-serif; 
     text-shadow: 0 2px 0 #34495e; 
     text-align:right;
     font-weight: 800;
@@ -611,7 +618,7 @@ footer img {
 .projTitle {
     width: 200px;
     height: 160px;
-    font-family: 'lato', sans-serif;
+    font-family: 'Poppings', sans-serif;
     color:#667273; 
     background-color: #f3f3f3;
     border-radius: 8px;
