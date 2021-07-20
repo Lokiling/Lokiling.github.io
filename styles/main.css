@@ -199,12 +199,13 @@ section {
     position:relative;
 }
 .sectionTitle{
-    width: 500px;
+    width: 100%;
     text-align: center;
     margin: 0 auto 20px auto;
     padding-top: 20px;
-    font-size: 45px;
-    border-bottom: 2px dotted;
+    font-size: 44px;
+    line-height: 64px;
+/*    border-bottom: 2px dotted;*/
 }
 .sectionDescribe {
     display:inline-block;
@@ -689,6 +690,7 @@ footer img {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: 40px 0 80px 0;
 }
 
 .projectsContainer > .projCard { margin: 16px;}
