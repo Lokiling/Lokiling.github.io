@@ -9,6 +9,7 @@
     #logo_intro {
         height: 200px;
     }
+    #intro {background-size: 65%;}
     
 }
 @media only screen and (device-width: 660px) {
@@ -27,4 +28,5 @@
     #nav {
         display: none;
     }
+    #intro {background-size: 85%;}
 }

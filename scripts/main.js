@@ -15,19 +15,19 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#logo_intro").fadeIn(1500);
         $("#cpM").animate({ opacity: 0 },1500);    
-    },2500);
+    },5000);
     
-    function worksSelect(sort){
-        $("ul.grid li").hide();
-        $(sort).show();
-        $(".ele_works").removeClass("actived");
-    }
-    $(function(){
-        $('#projectGrids').mixitup({
-            easing: 'snap',
-            effects: ['fade','grayscale'],
-        });
-    });
+//    function worksSelect(sort){
+//        $("ul.grid li").hide();
+//        $(sort).show();
+//        $(".ele_works").removeClass("actived");
+//    }
+//    $(function(){
+//        $('#projectGrids').mixitup({
+//            easing: 'snap',
+//            effects: ['fade','grayscale'],
+//        });
+//    });
     
     // makes sure the whole site is loaded
     jQuery(window).load(function() {

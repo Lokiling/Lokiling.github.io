@@ -48,7 +48,7 @@
                 textShadowBlur:0,
                 opacity: 1
               }, 500);
-            })},3000);
+            })},5000);
           break;
         }
       };
