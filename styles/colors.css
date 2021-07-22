@@ -21,6 +21,12 @@
     --berry-5:rgba(64, 117, 255,1);
     --berry-7:rgba(18, 47, 123, 1);
     --berry-9:rgba(4, 18, 52, 1);
+    /*yellow*/
+    --banana-0:rgba(254, 243, 217, 1);
+    --banana-3:rgba(252, 206, 104, 1);
+    --banana-5:rgba(251, 176, 14, 1);
+    --banana-6:rgba(205, 142, 3, 1);
+    --banana-8:rgba(60, 41, 1, 1);
 }
 
 
@@ -53,14 +59,14 @@ nav.green a { color: var(--kiwi-7); }
 nav.green a:hover { color: var(--kiwi-0);} 
 nav.green .nav_current { background-color: var(--kiwi-7); color: var(--kiwi-0);}
 
-.yellow_bg { background-color: rgba(253, 200, 43, 0.9); }
-.yellow_bg_dark { background-color: #fda52b; }
-.yellow_border { border-bottom-color: #fda52b; }
-.yellow_fonts { color: #f1c40f; }
-.yellow_fonts span { color: #fdc82b; }
-nav.yellow a { color: #fda52b; }
-nav.yellow a:hover {color: #ecf0f1; }
-nav.yellow .nav_current { background-color: #fda52b; }
+.yellow_bg { background-color: var(--banana-3); }
+.yellow_bg_dark { background-color: var(--banana-5);  }
+.yellow_border { border-bottom-color: var(--banana-5);  }
+.yellow_fonts { color: var(--banana-5);  }
+.yellow_fonts span { color: var(--banana-5);  }
+nav.yellow a { color: var(--banana-6);  }
+nav.yellow a:hover {color: var(--banana-8);  }
+nav.yellow .nav_current { background-color: var(--banana-6);  }
 
 .blue_bg { background-color:var(--berry-5); }
 .blue_bg_dark { background-color:var(--berry-7); }
