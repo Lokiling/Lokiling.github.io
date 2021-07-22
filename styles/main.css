@@ -707,3 +707,7 @@ footer img {
 #about p {
     color: var(--berry-7);
 }
+
+.fa-li {
+    top:.25em;
+}
