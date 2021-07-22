@@ -59,12 +59,13 @@
     margin: 20px auto;
     font-size: 24px;
     line-height: 60px;
-    background-color: #f2836b;
-    box-shadow:0 3px 0 #e3694f;
+    background-color: var(--tomato-3);
+    box-shadow:0 3px 0 var(--tomato-5);
 }
 .ele_resume:hover {
-    background-color: #ff9c86;
-    box-shadow:0 5px 0 #e3694f;
+    filter: brightness(1.1);
+    background-color: var(--tomato-3);;
+    box-shadow:0 5px 0 var(--tomato-5);;
 }
 .ele_resume:active {
     box-shadow: none;
@@ -76,12 +77,13 @@
     margin: 20px auto;
     font-size: 24px;
     line-height: 60px;
-    background-color: #54beef;
-    box-shadow:0 3px 0 #00a2e0;
+    background-color: var(--berry-5);
+    box-shadow:0 3px 0 var(--berry-7);
 }
 .ele_about:hover {
-    background-color: #66c5f1;
-    box-shadow:0 5px 0 #00a2e0;
+    filter: brightness(1.1);
+    background-color: var(--berry-5);
+    box-shadow:0 5px 0 var(--berry-7);
 }
 .ele_about:active {
     box-shadow: none;

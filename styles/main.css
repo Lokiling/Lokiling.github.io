@@ -233,7 +233,7 @@ section {
 /* works section */
 #works {
     height: 720px;
-    color: #1abc9c;
+    background-color: var(--kiwi-0) 
     
 }
 .worksWrapper {
@@ -267,6 +267,7 @@ section {
     background-image: url(../images/icons_bg.png);
     background-position: center;
 */
+    background-color: var(--tomato-0);
 }
 .leftColumn {
 /*    margin-left: 100px;*/
@@ -300,7 +301,7 @@ section {
 article {
     color: #667273;
     margin-top: 20px;
-    background-color: #fdfdfd;
+    background-color: #ffffff;
     padding: 25px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -620,8 +621,8 @@ footer img {
     width: 200px;
     height: 160px;
     font-family: 'Poppings', sans-serif;
-    color:#667273; 
-    background-color: #f3f3f3;
+    color:var(--kiwi-9); 
+    background-color: var(--kiwi-0);
     border-radius: 8px;
     position: relative;
     margin: 0 auto;
@@ -636,13 +637,16 @@ footer img {
 }
 
 .projTitle h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     margin-bottom: 4px;
 }
 .projTitle span {
     font-size: 14px;
-    color: #9EA3A9;
+    color: var(--kiwi-7);
+    opacity: 70%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .projCard:hover .projImage{
@@ -695,3 +699,11 @@ footer img {
 
 .projectsContainer > .projCard { margin: 16px;}
 
+
+#about {
+    background-color: var(--berry-0);
+}
+/*#about article {background-color: var(--berry-1);}*/
+#about p {
+    color: var(--berry-7);
+}
