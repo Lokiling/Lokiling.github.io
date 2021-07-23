@@ -608,7 +608,6 @@ footer img {
 .projCard {
     width: 240px;
     height: 320px;
-    background-color: #FC949A;
     border-radius: 16px;
     overflow: hidden;
     transition:all 0.5s ;
@@ -619,15 +618,16 @@ footer img {
 
 .projTitle {
     width: 200px;
-    height: 160px;
-    font-family: 'Poppings', sans-serif;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
     color:var(--kiwi-9); 
     background-color: var(--kiwi-0);
-    border-radius: 8px;
+    border-radius: 16px;
     position: relative;
     margin: 0 auto;
-    top: -36px;
-    padding: 12px;
+    top: -40px;
+    padding: 8px;
+    padding-left: 16px;
     box-sizing: border-box;
     z-index: 1;
     transition:all 0.3s ;
@@ -657,7 +657,7 @@ footer img {
     -moz-transition:all 0.3s ;
 }
 .projCard:hover .projTitle{
-    top: -56px;
+    top: -64px;
     transition:all 0.3s ;
     -webkit-transition:all 0.3s ;
     -o-transition:all 0.3s ;
