@@ -1,7 +1,7 @@
 .button {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
     text-align: center;
     color: #f5f5f5;
     position: relative;
