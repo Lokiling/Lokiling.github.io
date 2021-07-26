@@ -723,3 +723,13 @@ footer img {
 .fa-li {
     top:.25em;
 }
+
+.mapPinsIno {
+    font-family: "Poppins", sans-serif;padding-left: 8px;color:#262C38;
+}
+.gm-ui-hover-effect {
+    display: none !important;
+}
+.gm-style .gm-style-iw-t::after {
+    display: none !important;
+}.gm-style .gm-style-iw-c{box-shadow: none !important; border-radius: 32px !important;border:4px solid #262C38 !important; }

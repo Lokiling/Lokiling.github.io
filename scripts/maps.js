@@ -109,7 +109,7 @@ function initMap() {
         ['Hawaiʻi Volcanoes National Park, HI, US', 19.410695, -155.280703 , 14],
         
         
-        ['Helsinki, Finland<BR/>Feb, 2016', 60.171857, 24.942056, 20],
+        ['Helsinki, Finland', 60.171857, 24.942056, 20],
         ['Rome, Italy', 41.890042, 12.492178, 19],
         ['Venice, Italy', 45.434216, 12.339135, 19],
         ['Cinque Terre, Italy', 44.135366, 9.682536, 19],
@@ -198,14 +198,8 @@ function initMap() {
             var myLatLng = new google.maps.LatLng(footprint[1], footprint[2]);
             
             infowindows[i] = new google.maps.InfoWindow({
-                content: '<div style="line-height:1.35;overflow:hidden; white-space:nowrap; font-size:16px;">' + footprint[0] + '</div>'
+                content: '<div class="mapPinsIno" style="line-height:1.35;overflow:hidden; white-space:nowrap; font-size:16px;">' + footprint[0] + '</div>',
             });
-            
-//             infowindows[i] = new google.maps.InfoWindow({
-//                  content:'<div id="iw-container" style="border-radius:8px;">' +
-//                     '<div class="iw-title">' + footprint[0] + '</div>' +
-//                   '</div>'
-//             });
             
             markers[i] = new google.maps.Marker({
                 position: myLatLng,
@@ -217,12 +211,15 @@ function initMap() {
                 infowindow: infowindows[i]
             });
             
-            google.maps.event.addListener(markers[i],'click', function() {
+            google.maps.event.addListener(markers[i],'mouseover', function() {
                 if (currentInfoWindow != null) {
                     currentInfoWindow.close();
                 }
                 this.infowindow.open(map, this);
                 currentInfoWindow = this.infowindow;
+            });
+            google.maps.event.addListener(markers[i],'mouseout', function() {
+                currentInfoWindow.close();
             });
         }
     }
