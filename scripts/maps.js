@@ -156,10 +156,10 @@ function initMap() {
     
     function setMarkers(map, locations, markerType) {
         var loct = {
-            url: 'images/location.png',
-            size: new google.maps.Size(20,34),
+            url: 'images/location.svg',
+            size: new google.maps.Size(28,34),
             origin: new google.maps.Point(0,0),
-            anchor: new google.maps.Point(10,34)
+            anchor: new google.maps.Point(14,34)
         };
         
         var plan = {
