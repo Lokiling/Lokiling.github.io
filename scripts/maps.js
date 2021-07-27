@@ -123,8 +123,8 @@ function initMap() {
         ['Guanajuato, México',21.015734, -101.253005,23],
         ['San Miguel de Allende, México',20.913921, -100.743856,24],
         ['Ciudad de México, México', 19.432467, -99.133269, 25],
-        ['Monte Albán', 17.044872, -96.767562, 26],
-        ['Oaxaca', 17.060456, -96.725293, 27],
+        ['Monte Albán, México', 17.044872, -96.767562, 26],
+        ['Oaxaca, México', 17.060456, -96.725293, 27],
         
         ['Barcelona, Spain', 41.403563, 2.174409, 20],
         ['Granada, Spain', 37.176957, -3.592384, 23],
