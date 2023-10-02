@@ -101,6 +101,16 @@ function initMap() {
         ['Bryce Canyon National Park, UT, US', 37.574000, -112.217790 , 2],
         ['Zion National Park, UT, US', 37.271759, -112.950043 , 3],
         ['Yosemite National Park, CA, US', 37.726837, -119.544930 , 2],
+        ['Seattle, WA, US', 47.620553, -122.349094, 3],
+        
+        ['Death Valley National Park, CA, US', 36.462839, -116.868898, 3],
+        ['Mojave National Preserve, CA, US', 35.047394, -115.393645, 4],
+        ['Joshua Tree National Park, CA, US', 34.012655, -116.167039, 5],
+        
+        ['Anchorage, AK, US', 61.218664, -149.885950, 2],
+        ['Denali National Park, AK, US', 63.750479, -149.291632, 1],
+        ['Matanuska Glacier, AK, US', 61.770035, -147.753827, 2],
+        ['Kenai Fjords National Park, AK, US', 59.853544, -149.869815, 3],
         
         ['Honolulu, HI, US', 21.278716, -157.829695 , 10],
         ['Haleakalā, HI, US', 20.709621, -156.252920 , 12],
