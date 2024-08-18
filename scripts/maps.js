@@ -142,6 +142,10 @@ function initMap() {
         ['Sevilla, Spain', 37.382901, -5.991083, 22],
         ['Madrid, Spain', 40.422170, -3.698937, 21],
         ['Segovia, Spain', 40.947999, -4.117879, 20],
+
+        ['Guatapé, Colombia',6.223614, -75.178780, 24],
+        ['Medellín, Colombia',6.208449, -75.570965, 25],
+        ['Bogotá, Colombia', 4.601896, -74.072202, 26],
         
         ['San Pedro de Atacama, Chile', -22.910823, -68.200480, 29],
         ['Viña del Mar, Chile',-33.024602, -71.551845, 30],
