@@ -732,5 +732,13 @@ footer img {
 }
 .gm-style .gm-style-iw-t::after {
     display: none !important;
-}.gm-style .gm-style-iw-c{box-shadow: none !important; border-radius: 32px !important;border:4px solid #262C38 !important; }
+}
+.gm-style .gm-style-iw-tc{
+    display: none !important;
+}
+.gm-style .gm-style-iw-tc::after {
+	Background-color: none !important;
+	Display: none !important;
+}
+.gm-style .gm-style-iw-c{box-shadow: none !important; border-radius: 32px !important;border:4px solid #262C38 !important; }
 .gm-style iframe + div { border:none!important; }
